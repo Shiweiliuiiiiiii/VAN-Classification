@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH -p gpu
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gpus-per-node=4
+#SBATCH -t 20:00
+#SBATCH --exclusive
+#SBATCH -o test.out
+
+source /home/sliu/miniconda3/etc/profile.d/conda.sh
+source activate torch110_py37
+
+module purge
+module load 2021
+module load CUDA/11.3.1
+#module load PyTorch/1.10.0-foss-2021a-CUDA-11.3.1
+
+
+MODEL=van_tiny # van_{tiny, small, base, large}
+DROP_PATH=0.1 # drop path rates [0.1, 0.1, 0.1, 0.2] for [tiny, small, base, large]
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash distributed_train.sh 4 /public/data1/datasets/imagenet2012/ \
+	  --model $MODEL -b 128 --lr 1e-3 --drop-path $DROP_PATH
+
+
+source deactivate

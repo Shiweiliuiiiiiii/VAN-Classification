@@ -51,14 +51,19 @@ class AttentionModule(nn.Module):
     def __init__(self, dim):
         super().__init__()
         self.conv0 = nn.Conv2d(dim, dim, 5, padding=2, groups=dim)
-        self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
+        # original dilation conv
+        # self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
+        # large conv with same receptive field
+        self.conv_spatial = nn.Conv2d(dim, dim, 19, stride=1, padding=9, groups=dim)
         self.conv1 = nn.Conv2d(dim, dim, 1)
 
 
     def forward(self, x):
         u = x.clone()        
         attn = self.conv0(x)
+        # print(f'size after first conv is {attn.size()}')
         attn = self.conv_spatial(attn)
+        # print(f'size after two conv is {attn.size()}')
         attn = self.conv1(attn)
 
         return u * attn
