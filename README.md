@@ -71,6 +71,7 @@ Unofficial [keras (tensorflow)](https://github.com/shkarupa-alex/tfvan) version.
 ```
 1. Pytorch >= 1.7
 2. timm == 0.4.12
+3. pip install PyYAML
 ```
 
 ### 4. Train 
