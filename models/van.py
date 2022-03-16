@@ -45,8 +45,6 @@ class Mlp(nn.Module):
         return x
 
 
-
-
 class AttentionModule(nn.Module):
     def __init__(self, dim):
         super().__init__()
