@@ -3,9 +3,9 @@
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
-#SBATCH --gpus=4
+#SBATCH --gpus=3
 #SBATCH -t 4-23:59:00
-#SBATCH --cpus-per-task=72
+#SBATCH --cpus-per-task=40
 #SBATCH --exclusive
 #SBATCH -o test.out
 
@@ -20,7 +20,7 @@ module load CUDA/11.3.1
 
 MODEL=van_tiny # van_{tiny, small, base, large}
 DROP_PATH=0.1 # drop path rates [0.1, 0.1, 0.1, 0.2] for [tiny, small, base, large]
-CUDA_VISIBLE_DEVICES=0,1,2,3 bash distributed_train.sh 4 /scratch-shared/shiwei/ \
+CUDA_VISIBLE_DEVICES=0,1,2 bash distributed_train.sh 3 /scratch-shared/shiwei/ \
 	  --sparse --model $MODEL -b 128 --lr 1e-3 --drop-path $DROP_PATH
 
 
