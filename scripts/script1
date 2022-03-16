@@ -21,6 +21,6 @@ module load CUDA/11.3.1
 MODEL=van_tiny # van_{tiny, small, base, large}
 DROP_PATH=0.1 # drop path rates [0.1, 0.1, 0.1, 0.2] for [tiny, small, base, large]
 CUDA_VISIBLE_DEVICES=0,1,2 bash distributed_train.sh 3 /scratch-shared/shiwei/ \
-	  --model $MODEL -b 256 --lr 1e-3 --drop-path $DROP_PATH --master_port=10000 --master_addr 127.0.0.2
+	  --model $MODEL -b 256 --lr 1e-3 --drop-path $DROP_PATH --master_port=10002 --master_addr 127.0.0.2
 	  
 source deactivate
