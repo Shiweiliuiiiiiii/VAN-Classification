@@ -20,7 +20,7 @@ def add_sparse_args(parser):
     parser.add_argument('--multiplier', type=float, default=1.0, metavar='N', help='extend training time by multiplier times')
 
     # hyperparameters for GraNet
-    parser.add_argument('--update-frequency', type=int, default=2000, metavar='N', help='how many iterations to train between mask update')
+    parser.add_argument('-u', '--update-frequency', type=int, default=2000, metavar='N', help='how many iterations to train between mask update')
     parser.add_argument('--init-density', type=float, default=0.5, help='The initial density of sparse networks')
     parser.add_argument('--final-density', type=float, default=0.20, help='The target density of sparse networks.')
     parser.add_argument('--init-prune-epoch', type=int, default=30, help='The starting epoch of gradual pruning.')
@@ -554,7 +554,12 @@ class Masking(object):
                     self.remove_weight(name)
                     #self.remove_weight_partial_name(name, verbose=self.verbose)
 
+
     def apply_mask(self):
+
+        # synchronism masks
+        self.synchronism_masks()
+
         for module in self.modules:
             for name, tensor in module.named_parameters():
                 if name in self.masks:
@@ -657,4 +662,9 @@ class Masking(object):
         total_fired_weights = ntotal_fired_weights/ntotal_weights
         print('The percentage of the total fired weights is:', total_fired_weights)
         return layer_fired_weights, total_fired_weights
+
+    def synchronism_masks(self):
+
+        for name in self.masks.keys():
+            torch.distributed.broadcast(self.masks[name], src=0, async_op=False)
 
