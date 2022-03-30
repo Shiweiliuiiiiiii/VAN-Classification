@@ -612,7 +612,7 @@ def main():
 
     mask=None
     if args.sparse:
-        decay = CosineDecay(args.prune_rate, int(len(loader_train)*(num_epochs - start_epoch)))
+        decay = CosineDecay(args.prune_rate, int(len(loader_train)*(num_epochs)), init_step= int(len(loader_train)*(start_epoch)))
         mask = Masking(optimizer,train_loader=loader_train, prune_mode=args.prune, prune_rate_decay=decay, growth_mode=args.growth, redistribution_mode=args.redistribution, args=args)
         mask.add_module(model)
 

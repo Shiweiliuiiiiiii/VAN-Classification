@@ -1,0 +1,44 @@
+Added key: store_based_barrier_key:1 to store for rank: 1
+Added key: store_based_barrier_key:1 to store for rank: 2
+Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 3
+Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+Model van_tiny created, param count:4605000
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+AMP not enabled. Training in float32.
+Using native Torch DistributedDataParallel.
+Scheduled epochs: 310
+Train: 0 [   0/1251 (  0%)]  Loss: 6.916 (6.92)  Time: 21.582s,   47.45/s  (21.582s,   47.45/s)  LR: 1.000e-06  Data: 15.891 (15.891)
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Train: 0 [  50/1251 (  4%)]  Loss: 6.919 (6.92)  Time: 0.606s, 1690.36/s  (1.031s,  992.83/s)  LR: 1.000e-06  Data: 0.014 (0.328)
+Train: 0 [ 100/1251 (  8%)]  Loss: 6.916 (6.92)  Time: 0.606s, 1690.90/s  (0.822s, 1245.57/s)  LR: 1.000e-06  Data: 0.014 (0.173)
+Train: 0 [ 150/1251 ( 12%)]  Loss: 6.914 (6.92)  Time: 0.606s, 1690.18/s  (0.751s, 1363.93/s)  LR: 1.000e-06  Data: 0.014 (0.121)
+Train: 0 [ 200/1251 ( 16%)]  Loss: 6.918 (6.92)  Time: 0.610s, 1679.11/s  (0.715s, 1431.44/s)  LR: 1.000e-06  Data: 0.015 (0.094)
+Train: 0 [ 250/1251 ( 20%)]  Loss: 6.915 (6.92)  Time: 0.607s, 1685.85/s  (0.694s, 1475.52/s)  LR: 1.000e-06  Data: 0.015 (0.079)
+Train: 0 [ 300/1251 ( 24%)]  Loss: 6.914 (6.92)  Time: 0.607s, 1686.80/s  (0.680s, 1506.55/s)  LR: 1.000e-06  Data: 0.016 (0.068)
+Train: 0 [ 350/1251 ( 28%)]  Loss: 6.918 (6.92)  Time: 0.607s, 1685.93/s  (0.669s, 1529.51/s)  LR: 1.000e-06  Data: 0.016 (0.060)
+Train: 0 [ 400/1251 ( 32%)]  Loss: 6.917 (6.92)  Time: 0.609s, 1682.28/s  (0.662s, 1547.27/s)  LR: 1.000e-06  Data: 0.015 (0.055)
+Train: 0 [ 450/1251 ( 36%)]  Loss: 6.914 (6.92)  Time: 0.609s, 1680.41/s  (0.656s, 1561.37/s)  LR: 1.000e-06  Data: 0.015 (0.050)
+Train: 0 [ 500/1251 ( 40%)]  Loss: 6.906 (6.92)  Time: 0.610s, 1678.94/s  (0.651s, 1572.84/s)  LR: 1.000e-06  Data: 0.015 (0.047)
+Train: 0 [ 550/1251 ( 44%)]  Loss: 6.915 (6.92)  Time: 0.607s, 1688.31/s  (0.647s, 1582.28/s)  LR: 1.000e-06  Data: 0.015 (0.044)
+Train: 0 [ 600/1251 ( 48%)]  Loss: 6.913 (6.91)  Time: 0.608s, 1682.91/s  (0.644s, 1590.28/s)  LR: 1.000e-06  Data: 0.015 (0.042)
+Train: 0 [ 650/1251 ( 52%)]  Loss: 6.910 (6.91)  Time: 0.607s, 1685.95/s  (0.641s, 1597.14/s)  LR: 1.000e-06  Data: 0.016 (0.040)
+Train: 0 [ 700/1251 ( 56%)]  Loss: 6.913 (6.91)  Time: 0.609s, 1680.79/s  (0.639s, 1603.06/s)  LR: 1.000e-06  Data: 0.016 (0.038)
+Train: 0 [ 750/1251 ( 60%)]  Loss: 6.905 (6.91)  Time: 0.607s, 1686.89/s  (0.637s, 1608.21/s)  LR: 1.000e-06  Data: 0.015 (0.036)
+Train: 0 [ 800/1251 ( 64%)]  Loss: 6.913 (6.91)  Time: 0.610s, 1679.54/s  (0.635s, 1612.75/s)  LR: 1.000e-06  Data: 0.016 (0.035)
+Train: 0 [ 850/1251 ( 68%)]  Loss: 6.909 (6.91)  Time: 0.609s, 1680.24/s  (0.633s, 1616.77/s)  LR: 1.000e-06  Data: 0.015 (0.034)

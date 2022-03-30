@@ -49,10 +49,12 @@ class AttentionModule(nn.Module):
     def __init__(self, dim):
         super().__init__()
         self.conv0 = nn.Conv2d(dim, dim, 5, padding=2, groups=dim)
+        # (c-1)/2  = padding
         # original dilation conv
         # self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
         # large conv with same receptive field
-        self.conv_spatial = nn.Conv2d(dim, dim, 19, stride=1, padding=9, groups=dim)
+        # self.conv_spatial = nn.Conv2d(dim, dim, 19, stride=1, padding=9, groups=dim)
+        self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=9, groups=dim)
         self.conv1 = nn.Conv2d(dim, dim, 1)
 
 
@@ -66,6 +68,22 @@ class AttentionModule(nn.Module):
 
         return u * attn
 
+class AttentionModule_LK(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=10, groups=dim)
+        self.conv1 = nn.Conv2d(dim, dim, 1)
+
+    def forward(self, x):
+        u = x.clone()
+        # attn = self.conv0(x)
+        # print(f'size after first conv is {attn.size()}')
+        attn = self.conv_spatial(x)
+        # print(f'size after two conv is {attn.size()}')
+        attn = self.conv1(attn)
+
+        return u * attn
+
 
 class SpatialAttention(nn.Module):
     def __init__(self, d_model):
@@ -73,7 +91,8 @@ class SpatialAttention(nn.Module):
 
         self.proj_1 = nn.Conv2d(d_model, d_model, 1)
         self.activation = nn.GELU()
-        self.spatial_gating_unit = AttentionModule(d_model)
+        # self.spatial_gating_unit = AttentionModule(d_model)
+        self.spatial_gating_unit = AttentionModule_LK(d_model)
         self.proj_2 = nn.Conv2d(d_model, d_model, 1)
 
     def forward(self, x):

@@ -1,0 +1,1499 @@
+Added key: store_based_barrier_key:1 to store for rank: 1
+Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 3
+Added key: store_based_barrier_key:1 to store for rank: 2
+Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 4.
+Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 4.
+Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 4.
+Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 4.
+Model van_tiny created, param count:4605000
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+AMP not enabled. Training in float32.
+Restoring model state from checkpoint...
+Restoring optimizer state from checkpoint...
+Loaded checkpoint 'output/train/20220318-102327-van_tiny-224/checkpoint-157.pth.tar' (epoch 157)
+Using native Torch DistributedDataParallel.
+Scheduled epochs: 310
+initialized with resume
+initialized with resume
+initialized with resume
+96929692
+9692
+
+97469746
+
+9746
+9784
+9784
+9784
+14067
+14067
+14067
+1423814238
+
+14238
+1415814158
+
+14158
+2742827428
+
+27428
+2723427234
+
+27234
+2751727517
+
+27517
+27258
+27258
+27258
+27281
+27281
+27281
+40365
+40365
+40365
+40585
+40585
+40585
+initialized with resume
+9692
+9746
+9784
+14067
+14238
+14158
+27428
+27234
+27517
+27258
+27281
+40365
+40585
+Total parameters under sparsity level of 0.5: 0.5009574099722992
+Total parameters under sparsity level of 0.5: 0.5009574099722992
+Total parameters under sparsity level of 0.5: 0.5009574099722992
+Total parameters under sparsity level of 0.5: 0.5009574099722992
+/home/shiweil/miniconda3/envs/pt1.10_cuda11.3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/home/shiweil/miniconda3/envs/pt1.10_cuda11.3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/home/shiweil/miniconda3/envs/pt1.10_cuda11.3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/home/shiweil/miniconda3/envs/pt1.10_cuda11.3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Train: 158 [   0/1251 (  0%)]  Loss: 4.099 (4.10)  Time: 25.943s,   39.47/s  (25.943s,   39.47/s)  LR: 4.587e-04  Data: 19.029 (19.029)
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Train: 158 [  50/1251 (  4%)]  Loss: 3.614 (3.86)  Time: 0.614s, 1666.82/s  (1.117s,  916.34/s)  LR: 4.587e-04  Data: 0.018 (0.390)
+Train: 158 [ 100/1251 (  8%)]  Loss: 3.568 (3.76)  Time: 0.637s, 1606.67/s  (0.869s, 1178.70/s)  LR: 4.587e-04  Data: 0.043 (0.206)
+Train: 158 [ 150/1251 ( 12%)]  Loss: 4.080 (3.84)  Time: 0.615s, 1665.81/s  (0.785s, 1304.05/s)  LR: 4.587e-04  Data: 0.018 (0.144)
+Train: 158 [ 200/1251 ( 16%)]  Loss: 3.844 (3.84)  Time: 0.617s, 1660.70/s  (0.743s, 1378.45/s)  LR: 4.587e-04  Data: 0.021 (0.112)
+Train: 158 [ 250/1251 ( 20%)]  Loss: 3.954 (3.86)  Time: 0.614s, 1667.18/s  (0.717s, 1427.45/s)  LR: 4.587e-04  Data: 0.019 (0.094)
+Train: 158 [ 300/1251 ( 24%)]  Loss: 4.005 (3.88)  Time: 0.619s, 1653.51/s  (0.700s, 1462.02/s)  LR: 4.587e-04  Data: 0.018 (0.081)
+Train: 158 [ 350/1251 ( 28%)]  Loss: 3.568 (3.84)  Time: 0.615s, 1664.98/s  (0.688s, 1487.79/s)  LR: 4.587e-04  Data: 0.017 (0.072)
+Train: 158 [ 400/1251 ( 32%)]  Loss: 3.732 (3.83)  Time: 0.614s, 1666.93/s  (0.679s, 1507.74/s)  LR: 4.587e-04  Data: 0.017 (0.065)
+Train: 158 [ 450/1251 ( 36%)]  Loss: 3.716 (3.82)  Time: 0.615s, 1664.96/s  (0.672s, 1523.61/s)  LR: 4.587e-04  Data: 0.020 (0.060)
+Train: 158 [ 500/1251 ( 40%)]  Loss: 3.676 (3.80)  Time: 0.614s, 1666.53/s  (0.666s, 1536.50/s)  LR: 4.587e-04  Data: 0.019 (0.056)
+Train: 158 [ 550/1251 ( 44%)]  Loss: 3.485 (3.78)  Time: 0.616s, 1661.82/s  (0.662s, 1547.29/s)  LR: 4.587e-04  Data: 0.017 (0.052)
+Train: 158 [ 600/1251 ( 48%)]  Loss: 3.718 (3.77)  Time: 0.616s, 1661.49/s  (0.658s, 1556.38/s)  LR: 4.587e-04  Data: 0.019 (0.050)
+Train: 158 [ 650/1251 ( 52%)]  Loss: 3.878 (3.78)  Time: 0.617s, 1659.77/s  (0.655s, 1564.21/s)  LR: 4.587e-04  Data: 0.019 (0.047)
+Train: 158 [ 700/1251 ( 56%)]  Loss: 4.003 (3.80)  Time: 0.617s, 1658.71/s  (0.652s, 1571.02/s)  LR: 4.587e-04  Data: 0.018 (0.045)
+Train: 158 [ 750/1251 ( 60%)]  Loss: 4.262 (3.83)  Time: 0.614s, 1667.05/s  (0.649s, 1576.96/s)  LR: 4.587e-04  Data: 0.016 (0.043)
+Train: 158 [ 800/1251 ( 64%)]  Loss: 3.662 (3.82)  Time: 0.613s, 1671.74/s  (0.647s, 1582.17/s)  LR: 4.587e-04  Data: 0.018 (0.042)
+Train: 158 [ 850/1251 ( 68%)]  Loss: 3.848 (3.82)  Time: 0.616s, 1662.61/s  (0.645s, 1586.79/s)  LR: 4.587e-04  Data: 0.019 (0.040)
+Train: 158 [ 900/1251 ( 72%)]  Loss: 3.652 (3.81)  Time: 0.614s, 1667.74/s  (0.644s, 1590.95/s)  LR: 4.587e-04  Data: 0.017 (0.039)
+Train: 158 [ 950/1251 ( 76%)]  Loss: 3.784 (3.81)  Time: 0.616s, 1661.01/s  (0.642s, 1594.70/s)  LR: 4.587e-04  Data: 0.020 (0.038)
+Train: 158 [1000/1251 ( 80%)]  Loss: 3.922 (3.81)  Time: 0.620s, 1652.22/s  (0.641s, 1598.06/s)  LR: 4.587e-04  Data: 0.017 (0.037)
+Train: 158 [1050/1251 ( 84%)]  Loss: 4.134 (3.83)  Time: 0.615s, 1666.02/s  (0.640s, 1601.15/s)  LR: 4.587e-04  Data: 0.016 (0.036)
+Train: 158 [1100/1251 ( 88%)]  Loss: 3.396 (3.81)  Time: 0.614s, 1669.04/s  (0.638s, 1603.91/s)  LR: 4.587e-04  Data: 0.017 (0.035)
+Train: 158 [1150/1251 ( 92%)]  Loss: 4.204 (3.83)  Time: 0.613s, 1669.59/s  (0.637s, 1606.65/s)  LR: 4.587e-04  Data: 0.018 (0.034)
+Train: 158 [1200/1251 ( 96%)]  Loss: 4.289 (3.84)  Time: 0.612s, 1673.61/s  (0.636s, 1609.36/s)  LR: 4.587e-04  Data: 0.016 (0.034)
+Train: 158 [1250/1251 (100%)]  Loss: 3.421 (3.83)  Time: 0.595s, 1722.22/s  (0.635s, 1611.88/s)  LR: 4.587e-04  Data: 0.000 (0.033)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 14.300 (14.300)  Loss:  0.8096 (0.8096)  Acc@1: 86.4258 (86.4258)  Acc@5: 96.0938 (96.0938)
+Test: [  48/48]  Time: 0.585 (0.452)  Loss:  0.9171 (1.4091)  Acc@1: 81.2500 (70.8280)  Acc@5: 94.2217 (90.6120)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 159 [   0/1251 (  0%)]  Loss: 3.853 (3.85)  Time: 13.868s,   73.84/s  (13.868s,   73.84/s)  LR: 4.535e-04  Data: 12.243 (12.243)
+Train: 159 [  50/1251 (  4%)]  Loss: 4.417 (4.14)  Time: 0.613s, 1670.83/s  (0.888s, 1152.66/s)  LR: 4.535e-04  Data: 0.017 (0.266)
+Train: 159 [ 100/1251 (  8%)]  Loss: 3.858 (4.04)  Time: 0.614s, 1666.81/s  (0.754s, 1358.17/s)  LR: 4.535e-04  Data: 0.017 (0.143)
+Train: 159 [ 150/1251 ( 12%)]  Loss: 4.151 (4.07)  Time: 0.616s, 1661.47/s  (0.708s, 1446.59/s)  LR: 4.535e-04  Data: 0.018 (0.101)
+Train: 159 [ 200/1251 ( 16%)]  Loss: 3.021 (3.86)  Time: 0.616s, 1662.31/s  (0.685s, 1495.17/s)  LR: 4.535e-04  Data: 0.018 (0.081)
+Train: 159 [ 250/1251 ( 20%)]  Loss: 3.617 (3.82)  Time: 0.618s, 1658.20/s  (0.671s, 1525.88/s)  LR: 4.535e-04  Data: 0.018 (0.068)
+Train: 159 [ 300/1251 ( 24%)]  Loss: 4.091 (3.86)  Time: 0.615s, 1664.43/s  (0.662s, 1547.44/s)  LR: 4.535e-04  Data: 0.018 (0.060)
+Train: 159 [ 350/1251 ( 28%)]  Loss: 3.452 (3.81)  Time: 0.614s, 1667.41/s  (0.655s, 1563.13/s)  LR: 4.535e-04  Data: 0.018 (0.054)
+Train: 159 [ 400/1251 ( 32%)]  Loss: 3.529 (3.78)  Time: 0.614s, 1668.48/s  (0.650s, 1575.10/s)  LR: 4.535e-04  Data: 0.016 (0.049)
+Train: 159 [ 450/1251 ( 36%)]  Loss: 4.200 (3.82)  Time: 0.613s, 1669.21/s  (0.646s, 1584.35/s)  LR: 4.535e-04  Data: 0.018 (0.046)
+Train: 159 [ 500/1251 ( 40%)]  Loss: 4.057 (3.84)  Time: 0.614s, 1666.81/s  (0.643s, 1591.94/s)  LR: 4.535e-04  Data: 0.020 (0.043)
+Train: 159 [ 550/1251 ( 44%)]  Loss: 3.920 (3.85)  Time: 0.616s, 1661.64/s  (0.641s, 1598.33/s)  LR: 4.535e-04  Data: 0.017 (0.041)
+Train: 159 [ 600/1251 ( 48%)]  Loss: 3.773 (3.84)  Time: 0.616s, 1662.34/s  (0.638s, 1603.78/s)  LR: 4.535e-04  Data: 0.019 (0.039)
+Train: 159 [ 650/1251 ( 52%)]  Loss: 3.500 (3.82)  Time: 0.615s, 1664.21/s  (0.637s, 1608.42/s)  LR: 4.535e-04  Data: 0.018 (0.037)
+Train: 159 [ 700/1251 ( 56%)]  Loss: 3.621 (3.80)  Time: 0.615s, 1664.49/s  (0.635s, 1612.19/s)  LR: 4.535e-04  Data: 0.020 (0.036)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+Prune rate: 0.7983183001603922
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+Prune rate: 0.7983183001603922
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 0.7983183001603922
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 0.7983183001603922
+
+Train: 159 [ 750/1251 ( 60%)]  Loss: 4.482 (3.85)  Time: 0.614s, 1668.31/s  (0.634s, 1615.48/s)  LR: 4.535e-04  Data: 0.017 (0.035)
+Train: 159 [ 800/1251 ( 64%)]  Loss: 3.973 (3.85)  Time: 0.615s, 1664.94/s  (0.633s, 1618.55/s)  LR: 4.535e-04  Data: 0.018 (0.034)
+Train: 159 [ 850/1251 ( 68%)]  Loss: 4.075 (3.87)  Time: 0.617s, 1660.61/s  (0.632s, 1621.14/s)  LR: 4.535e-04  Data: 0.021 (0.033)
+Train: 159 [ 900/1251 ( 72%)]  Loss: 4.033 (3.87)  Time: 0.614s, 1667.60/s  (0.631s, 1623.54/s)  LR: 4.535e-04  Data: 0.018 (0.032)
+Train: 159 [ 950/1251 ( 76%)]  Loss: 3.610 (3.86)  Time: 0.613s, 1670.43/s  (0.630s, 1625.67/s)  LR: 4.535e-04  Data: 0.018 (0.031)
+Train: 159 [1000/1251 ( 80%)]  Loss: 4.379 (3.89)  Time: 0.614s, 1669.00/s  (0.629s, 1627.65/s)  LR: 4.535e-04  Data: 0.018 (0.031)
+Train: 159 [1050/1251 ( 84%)]  Loss: 4.230 (3.90)  Time: 0.613s, 1670.58/s  (0.628s, 1629.44/s)  LR: 4.535e-04  Data: 0.018 (0.030)
+Train: 159 [1100/1251 ( 88%)]  Loss: 3.888 (3.90)  Time: 0.614s, 1668.69/s  (0.628s, 1631.09/s)  LR: 4.535e-04  Data: 0.018 (0.030)
+Train: 159 [1150/1251 ( 92%)]  Loss: 4.001 (3.91)  Time: 0.613s, 1671.12/s  (0.627s, 1632.67/s)  LR: 4.535e-04  Data: 0.017 (0.029)
+Train: 159 [1200/1251 ( 96%)]  Loss: 3.582 (3.89)  Time: 0.612s, 1672.83/s  (0.627s, 1634.26/s)  LR: 4.535e-04  Data: 0.017 (0.029)
+Train: 159 [1250/1251 (100%)]  Loss: 4.094 (3.90)  Time: 0.596s, 1718.61/s  (0.626s, 1635.74/s)  LR: 4.535e-04  Data: 0.000 (0.028)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.503 (9.503)  Loss:  0.8075 (0.8075)  Acc@1: 86.2305 (86.2305)  Acc@5: 96.6797 (96.6797)
+Test: [  48/48]  Time: 0.116 (0.345)  Loss:  0.8856 (1.4055)  Acc@1: 82.4292 (71.1140)  Acc@5: 95.0472 (90.6280)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 160 [   0/1251 (  0%)]  Loss: 3.674 (3.67)  Time: 15.235s,   67.22/s  (15.235s,   67.22/s)  LR: 4.483e-04  Data: 13.680 (13.680)
+Train: 160 [  50/1251 (  4%)]  Loss: 4.371 (4.02)  Time: 0.613s, 1670.87/s  (0.927s, 1105.07/s)  LR: 4.483e-04  Data: 0.016 (0.306)
+Train: 160 [ 100/1251 (  8%)]  Loss: 3.767 (3.94)  Time: 0.616s, 1663.17/s  (0.773s, 1324.80/s)  LR: 4.483e-04  Data: 0.020 (0.164)
+Train: 160 [ 150/1251 ( 12%)]  Loss: 3.578 (3.85)  Time: 0.616s, 1661.13/s  (0.720s, 1421.51/s)  LR: 4.483e-04  Data: 0.016 (0.115)
+Train: 160 [ 200/1251 ( 16%)]  Loss: 4.077 (3.89)  Time: 0.614s, 1667.70/s  (0.694s, 1475.34/s)  LR: 4.483e-04  Data: 0.018 (0.091)
+Train: 160 [ 250/1251 ( 20%)]  Loss: 3.878 (3.89)  Time: 0.617s, 1660.65/s  (0.678s, 1509.61/s)  LR: 4.483e-04  Data: 0.019 (0.077)
+Train: 160 [ 300/1251 ( 24%)]  Loss: 4.044 (3.91)  Time: 0.616s, 1663.06/s  (0.668s, 1533.60/s)  LR: 4.483e-04  Data: 0.020 (0.067)
+Train: 160 [ 350/1251 ( 28%)]  Loss: 3.818 (3.90)  Time: 0.615s, 1663.98/s  (0.660s, 1551.16/s)  LR: 4.483e-04  Data: 0.021 (0.060)
+Train: 160 [ 400/1251 ( 32%)]  Loss: 4.080 (3.92)  Time: 0.614s, 1668.13/s  (0.654s, 1564.60/s)  LR: 4.483e-04  Data: 0.018 (0.055)
+Train: 160 [ 450/1251 ( 36%)]  Loss: 4.061 (3.93)  Time: 0.614s, 1667.63/s  (0.650s, 1575.29/s)  LR: 4.483e-04  Data: 0.017 (0.051)
+Train: 160 [ 500/1251 ( 40%)]  Loss: 3.610 (3.91)  Time: 0.614s, 1667.82/s  (0.646s, 1583.92/s)  LR: 4.483e-04  Data: 0.018 (0.048)
+Train: 160 [ 550/1251 ( 44%)]  Loss: 3.779 (3.89)  Time: 0.615s, 1665.54/s  (0.644s, 1591.03/s)  LR: 4.483e-04  Data: 0.017 (0.045)
+Train: 160 [ 600/1251 ( 48%)]  Loss: 3.950 (3.90)  Time: 0.615s, 1663.90/s  (0.641s, 1596.98/s)  LR: 4.483e-04  Data: 0.018 (0.043)
+Train: 160 [ 650/1251 ( 52%)]  Loss: 3.984 (3.91)  Time: 0.615s, 1665.35/s  (0.639s, 1602.07/s)  LR: 4.483e-04  Data: 0.017 (0.041)
+Train: 160 [ 700/1251 ( 56%)]  Loss: 4.216 (3.93)  Time: 0.616s, 1661.92/s  (0.637s, 1606.48/s)  LR: 4.483e-04  Data: 0.019 (0.039)
+Train: 160 [ 750/1251 ( 60%)]  Loss: 4.059 (3.93)  Time: 0.613s, 1669.73/s  (0.636s, 1610.30/s)  LR: 4.483e-04  Data: 0.018 (0.038)
+Train: 160 [ 800/1251 ( 64%)]  Loss: 3.458 (3.91)  Time: 0.613s, 1669.36/s  (0.635s, 1613.69/s)  LR: 4.483e-04  Data: 0.019 (0.037)
+Train: 160 [ 850/1251 ( 68%)]  Loss: 3.818 (3.90)  Time: 0.616s, 1662.03/s  (0.633s, 1616.72/s)  LR: 4.483e-04  Data: 0.021 (0.036)
+Train: 160 [ 900/1251 ( 72%)]  Loss: 3.727 (3.89)  Time: 0.618s, 1656.58/s  (0.632s, 1619.37/s)  LR: 4.483e-04  Data: 0.024 (0.035)
+Train: 160 [ 950/1251 ( 76%)]  Loss: 4.080 (3.90)  Time: 0.616s, 1663.36/s  (0.631s, 1621.78/s)  LR: 4.483e-04  Data: 0.017 (0.034)
+Train: 160 [1000/1251 ( 80%)]  Loss: 3.765 (3.90)  Time: 0.613s, 1669.53/s  (0.631s, 1623.92/s)  LR: 4.483e-04  Data: 0.017 (0.033)
+Train: 160 [1050/1251 ( 84%)]  Loss: 3.791 (3.89)  Time: 0.614s, 1667.69/s  (0.630s, 1625.87/s)  LR: 4.483e-04  Data: 0.018 (0.032)
+Train: 160 [1100/1251 ( 88%)]  Loss: 3.956 (3.89)  Time: 0.617s, 1660.92/s  (0.629s, 1627.66/s)  LR: 4.483e-04  Data: 0.022 (0.032)
+Train: 160 [1150/1251 ( 92%)]  Loss: 3.830 (3.89)  Time: 0.613s, 1671.54/s  (0.628s, 1629.42/s)  LR: 4.483e-04  Data: 0.016 (0.031)
+Train: 160 [1200/1251 ( 96%)]  Loss: 4.082 (3.90)  Time: 0.612s, 1672.68/s  (0.628s, 1631.10/s)  LR: 4.483e-04  Data: 0.018 (0.031)
+Train: 160 [1250/1251 (100%)]  Loss: 3.997 (3.90)  Time: 0.596s, 1719.41/s  (0.627s, 1632.69/s)  LR: 4.483e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.323 (9.323)  Loss:  0.9286 (0.9286)  Acc@1: 85.9375 (85.9375)  Acc@5: 96.9727 (96.9727)
+Test: [  48/48]  Time: 0.116 (0.342)  Loss:  0.9772 (1.5174)  Acc@1: 82.6651 (71.0520)  Acc@5: 95.6368 (90.7720)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 161 [   0/1251 (  0%)]  Loss: 3.974 (3.97)  Time: 14.480s,   70.72/s  (14.480s,   70.72/s)  LR: 4.431e-04  Data: 13.464 (13.464)
+Train: 161 [  50/1251 (  4%)]  Loss: 3.971 (3.97)  Time: 0.613s, 1669.26/s  (0.911s, 1123.51/s)  LR: 4.431e-04  Data: 0.017 (0.292)
+Train: 161 [ 100/1251 (  8%)]  Loss: 3.707 (3.88)  Time: 0.615s, 1666.01/s  (0.765s, 1337.81/s)  LR: 4.431e-04  Data: 0.018 (0.157)
+Train: 161 [ 150/1251 ( 12%)]  Loss: 3.795 (3.86)  Time: 0.613s, 1669.27/s  (0.715s, 1431.72/s)  LR: 4.431e-04  Data: 0.016 (0.111)
+Train: 161 [ 200/1251 ( 16%)]  Loss: 3.512 (3.79)  Time: 0.614s, 1667.60/s  (0.690s, 1483.66/s)  LR: 4.431e-04  Data: 0.019 (0.088)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+
+Prune rate: 1.1661417423186289
+
+Prune rate: 1.1661417423186289
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 1.1661417423186289
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 1.1661417423186289
+
+Train: 161 [ 250/1251 ( 20%)]  Loss: 3.735 (3.78)  Time: 0.614s, 1668.62/s  (0.675s, 1516.58/s)  LR: 4.431e-04  Data: 0.018 (0.074)
+Train: 161 [ 300/1251 ( 24%)]  Loss: 3.923 (3.80)  Time: 0.615s, 1664.37/s  (0.665s, 1539.46/s)  LR: 4.431e-04  Data: 0.021 (0.065)
+Train: 161 [ 350/1251 ( 28%)]  Loss: 3.549 (3.77)  Time: 0.617s, 1659.77/s  (0.658s, 1556.30/s)  LR: 4.431e-04  Data: 0.019 (0.058)
+Train: 161 [ 400/1251 ( 32%)]  Loss: 3.927 (3.79)  Time: 0.617s, 1660.48/s  (0.653s, 1569.12/s)  LR: 4.431e-04  Data: 0.019 (0.053)
+Train: 161 [ 450/1251 ( 36%)]  Loss: 3.591 (3.77)  Time: 0.614s, 1666.84/s  (0.648s, 1579.17/s)  LR: 4.431e-04  Data: 0.017 (0.049)
+Train: 161 [ 500/1251 ( 40%)]  Loss: 3.714 (3.76)  Time: 0.617s, 1660.75/s  (0.645s, 1587.32/s)  LR: 4.431e-04  Data: 0.018 (0.046)
+Train: 161 [ 550/1251 ( 44%)]  Loss: 3.949 (3.78)  Time: 0.617s, 1659.10/s  (0.642s, 1594.06/s)  LR: 4.431e-04  Data: 0.016 (0.044)
+Train: 161 [ 600/1251 ( 48%)]  Loss: 4.183 (3.81)  Time: 0.615s, 1664.99/s  (0.640s, 1599.75/s)  LR: 4.431e-04  Data: 0.018 (0.042)
+Train: 161 [ 650/1251 ( 52%)]  Loss: 3.827 (3.81)  Time: 0.616s, 1662.23/s  (0.638s, 1604.53/s)  LR: 4.431e-04  Data: 0.017 (0.040)
+Train: 161 [ 700/1251 ( 56%)]  Loss: 4.280 (3.84)  Time: 0.612s, 1671.94/s  (0.637s, 1608.75/s)  LR: 4.431e-04  Data: 0.018 (0.038)
+Train: 161 [ 750/1251 ( 60%)]  Loss: 3.822 (3.84)  Time: 0.613s, 1671.05/s  (0.635s, 1612.36/s)  LR: 4.431e-04  Data: 0.019 (0.037)
+Train: 161 [ 800/1251 ( 64%)]  Loss: 3.891 (3.84)  Time: 0.617s, 1660.94/s  (0.634s, 1615.54/s)  LR: 4.431e-04  Data: 0.017 (0.036)
+Train: 161 [ 850/1251 ( 68%)]  Loss: 4.304 (3.87)  Time: 0.616s, 1661.62/s  (0.633s, 1618.39/s)  LR: 4.431e-04  Data: 0.017 (0.035)
+Train: 161 [ 900/1251 ( 72%)]  Loss: 3.663 (3.86)  Time: 0.616s, 1663.03/s  (0.632s, 1620.84/s)  LR: 4.431e-04  Data: 0.018 (0.034)
+Train: 161 [ 950/1251 ( 76%)]  Loss: 3.770 (3.85)  Time: 0.614s, 1667.88/s  (0.631s, 1623.12/s)  LR: 4.431e-04  Data: 0.017 (0.033)
+Train: 161 [1000/1251 ( 80%)]  Loss: 3.587 (3.84)  Time: 0.617s, 1659.36/s  (0.630s, 1625.15/s)  LR: 4.431e-04  Data: 0.020 (0.033)
+Train: 161 [1050/1251 ( 84%)]  Loss: 3.742 (3.84)  Time: 0.616s, 1662.28/s  (0.629s, 1626.99/s)  LR: 4.431e-04  Data: 0.020 (0.032)
+Train: 161 [1100/1251 ( 88%)]  Loss: 3.951 (3.84)  Time: 0.616s, 1661.11/s  (0.629s, 1628.67/s)  LR: 4.431e-04  Data: 0.020 (0.031)
+Train: 161 [1150/1251 ( 92%)]  Loss: 3.471 (3.83)  Time: 0.614s, 1668.53/s  (0.628s, 1630.30/s)  LR: 4.431e-04  Data: 0.017 (0.031)
+Train: 161 [1200/1251 ( 96%)]  Loss: 4.198 (3.84)  Time: 0.612s, 1674.49/s  (0.627s, 1631.89/s)  LR: 4.431e-04  Data: 0.017 (0.030)
+Train: 161 [1250/1251 (100%)]  Loss: 4.177 (3.85)  Time: 0.595s, 1721.51/s  (0.627s, 1633.41/s)  LR: 4.431e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.308 (9.308)  Loss:  0.7444 (0.7444)  Acc@1: 87.4023 (87.4023)  Acc@5: 97.0703 (97.0703)
+Test: [  48/48]  Time: 0.116 (0.341)  Loss:  0.8036 (1.3719)  Acc@1: 84.3160 (71.2060)  Acc@5: 95.8726 (90.6480)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 162 [   0/1251 (  0%)]  Loss: 4.234 (4.23)  Time: 14.822s,   69.08/s  (14.822s,   69.08/s)  LR: 4.379e-04  Data: 13.823 (13.823)
+Train: 162 [  50/1251 (  4%)]  Loss: 3.841 (4.04)  Time: 0.612s, 1674.46/s  (0.909s, 1126.43/s)  LR: 4.379e-04  Data: 0.018 (0.290)
+Train: 162 [ 100/1251 (  8%)]  Loss: 4.081 (4.05)  Time: 0.615s, 1665.07/s  (0.764s, 1339.47/s)  LR: 4.379e-04  Data: 0.018 (0.156)
+Train: 162 [ 150/1251 ( 12%)]  Loss: 4.127 (4.07)  Time: 0.612s, 1673.41/s  (0.715s, 1432.53/s)  LR: 4.379e-04  Data: 0.017 (0.110)
+Train: 162 [ 200/1251 ( 16%)]  Loss: 4.214 (4.10)  Time: 0.613s, 1669.67/s  (0.690s, 1484.11/s)  LR: 4.379e-04  Data: 0.018 (0.087)
+Train: 162 [ 250/1251 ( 20%)]  Loss: 3.645 (4.02)  Time: 0.615s, 1664.25/s  (0.675s, 1516.97/s)  LR: 4.379e-04  Data: 0.019 (0.074)
+Train: 162 [ 300/1251 ( 24%)]  Loss: 4.056 (4.03)  Time: 0.614s, 1667.51/s  (0.665s, 1539.70/s)  LR: 4.379e-04  Data: 0.018 (0.064)
+Train: 162 [ 350/1251 ( 28%)]  Loss: 3.540 (3.97)  Time: 0.614s, 1667.93/s  (0.658s, 1556.32/s)  LR: 4.379e-04  Data: 0.018 (0.058)
+Train: 162 [ 400/1251 ( 32%)]  Loss: 3.389 (3.90)  Time: 0.615s, 1665.17/s  (0.653s, 1569.02/s)  LR: 4.379e-04  Data: 0.020 (0.053)
+Train: 162 [ 450/1251 ( 36%)]  Loss: 3.714 (3.88)  Time: 0.615s, 1665.80/s  (0.649s, 1579.01/s)  LR: 4.379e-04  Data: 0.018 (0.049)
+Train: 162 [ 500/1251 ( 40%)]  Loss: 3.440 (3.84)  Time: 0.617s, 1660.62/s  (0.645s, 1587.03/s)  LR: 4.379e-04  Data: 0.016 (0.046)
+Train: 162 [ 550/1251 ( 44%)]  Loss: 3.582 (3.82)  Time: 0.616s, 1663.58/s  (0.643s, 1593.73/s)  LR: 4.379e-04  Data: 0.019 (0.044)
+Train: 162 [ 600/1251 ( 48%)]  Loss: 3.731 (3.81)  Time: 0.614s, 1667.21/s  (0.640s, 1599.35/s)  LR: 4.379e-04  Data: 0.017 (0.042)
+Train: 162 [ 650/1251 ( 52%)]  Loss: 3.850 (3.82)  Time: 0.617s, 1660.59/s  (0.638s, 1604.15/s)  LR: 4.379e-04  Data: 0.022 (0.040)
+Train: 162 [ 700/1251 ( 56%)]  Loss: 4.312 (3.85)  Time: 0.618s, 1657.65/s  (0.637s, 1608.30/s)  LR: 4.379e-04  Data: 0.019 (0.038)
+Train: 162 [ 750/1251 ( 60%)]  Loss: 3.499 (3.83)  Time: 0.613s, 1670.42/s  (0.635s, 1611.90/s)  LR: 4.379e-04  Data: 0.019 (0.037)
+Train: 162 [ 800/1251 ( 64%)]  Loss: 3.665 (3.82)  Time: 0.616s, 1662.00/s  (0.634s, 1615.08/s)  LR: 4.379e-04  Data: 0.017 (0.036)
+Train: 162 [ 850/1251 ( 68%)]  Loss: 4.035 (3.83)  Time: 0.617s, 1660.62/s  (0.633s, 1617.87/s)  LR: 4.379e-04  Data: 0.020 (0.035)
+Train: 162 [ 900/1251 ( 72%)]  Loss: 3.773 (3.83)  Time: 0.614s, 1666.90/s  (0.632s, 1620.36/s)  LR: 4.379e-04  Data: 0.018 (0.034)
+Train: 162 [ 950/1251 ( 76%)]  Loss: 3.500 (3.81)  Time: 0.616s, 1663.26/s  (0.631s, 1622.65/s)  LR: 4.379e-04  Data: 0.017 (0.033)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+
+Prune rate: 1.6030687596463717
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+
+Prune rate: 1.6030687596463717
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+Prune rate: 1.6030687596463717
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 1.6030687596463717
+
+Train: 162 [1000/1251 ( 80%)]  Loss: 4.501 (3.84)  Time: 0.618s, 1657.05/s  (0.630s, 1624.68/s)  LR: 4.379e-04  Data: 0.019 (0.033)
+Train: 162 [1050/1251 ( 84%)]  Loss: 3.828 (3.84)  Time: 0.616s, 1662.59/s  (0.630s, 1626.55/s)  LR: 4.379e-04  Data: 0.020 (0.032)
+Train: 162 [1100/1251 ( 88%)]  Loss: 3.777 (3.84)  Time: 0.615s, 1666.09/s  (0.629s, 1628.23/s)  LR: 4.379e-04  Data: 0.018 (0.031)
+Train: 162 [1150/1251 ( 92%)]  Loss: 4.045 (3.85)  Time: 0.615s, 1665.30/s  (0.628s, 1629.88/s)  LR: 4.379e-04  Data: 0.019 (0.031)
+Train: 162 [1200/1251 ( 96%)]  Loss: 3.812 (3.85)  Time: 0.612s, 1672.35/s  (0.628s, 1631.49/s)  LR: 4.379e-04  Data: 0.018 (0.030)
+Train: 162 [1250/1251 (100%)]  Loss: 4.133 (3.86)  Time: 0.595s, 1721.90/s  (0.627s, 1633.01/s)  LR: 4.379e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.181 (9.181)  Loss:  0.7980 (0.7980)  Acc@1: 87.4023 (87.4023)  Acc@5: 96.8750 (96.8750)
+Test: [  48/48]  Time: 0.116 (0.338)  Loss:  1.0071 (1.4596)  Acc@1: 81.9576 (70.9580)  Acc@5: 94.5755 (90.6280)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 163 [   0/1251 (  0%)]  Loss: 4.308 (4.31)  Time: 14.812s,   69.13/s  (14.812s,   69.13/s)  LR: 4.327e-04  Data: 14.220 (14.220)
+Train: 163 [  50/1251 (  4%)]  Loss: 4.081 (4.19)  Time: 0.616s, 1662.73/s  (0.922s, 1110.85/s)  LR: 4.327e-04  Data: 0.018 (0.300)
+Train: 163 [ 100/1251 (  8%)]  Loss: 4.280 (4.22)  Time: 0.615s, 1665.69/s  (0.771s, 1328.24/s)  LR: 4.327e-04  Data: 0.016 (0.161)
+Train: 163 [ 150/1251 ( 12%)]  Loss: 4.074 (4.19)  Time: 0.615s, 1665.93/s  (0.719s, 1423.92/s)  LR: 4.327e-04  Data: 0.018 (0.113)
+Train: 163 [ 200/1251 ( 16%)]  Loss: 3.785 (4.11)  Time: 0.615s, 1663.87/s  (0.693s, 1477.20/s)  LR: 4.327e-04  Data: 0.021 (0.090)
+Train: 163 [ 250/1251 ( 20%)]  Loss: 4.068 (4.10)  Time: 0.614s, 1668.89/s  (0.678s, 1511.23/s)  LR: 4.327e-04  Data: 0.018 (0.076)
+Train: 163 [ 300/1251 ( 24%)]  Loss: 4.201 (4.11)  Time: 0.615s, 1666.35/s  (0.667s, 1534.78/s)  LR: 4.327e-04  Data: 0.018 (0.066)
+Train: 163 [ 350/1251 ( 28%)]  Loss: 3.310 (4.01)  Time: 0.614s, 1666.53/s  (0.660s, 1551.96/s)  LR: 4.327e-04  Data: 0.018 (0.059)
+Train: 163 [ 400/1251 ( 32%)]  Loss: 4.410 (4.06)  Time: 0.617s, 1660.17/s  (0.654s, 1565.23/s)  LR: 4.327e-04  Data: 0.018 (0.054)
+Train: 163 [ 450/1251 ( 36%)]  Loss: 4.018 (4.05)  Time: 0.614s, 1667.23/s  (0.650s, 1575.73/s)  LR: 4.327e-04  Data: 0.018 (0.050)
+Train: 163 [ 500/1251 ( 40%)]  Loss: 3.889 (4.04)  Time: 0.614s, 1667.11/s  (0.646s, 1584.14/s)  LR: 4.327e-04  Data: 0.018 (0.047)
+Train: 163 [ 550/1251 ( 44%)]  Loss: 3.661 (4.01)  Time: 0.616s, 1661.13/s  (0.644s, 1591.13/s)  LR: 4.327e-04  Data: 0.021 (0.045)
+Train: 163 [ 600/1251 ( 48%)]  Loss: 4.097 (4.01)  Time: 0.616s, 1661.53/s  (0.641s, 1597.00/s)  LR: 4.327e-04  Data: 0.021 (0.043)
+Train: 163 [ 650/1251 ( 52%)]  Loss: 4.229 (4.03)  Time: 0.615s, 1665.79/s  (0.639s, 1602.01/s)  LR: 4.327e-04  Data: 0.018 (0.041)
+Train: 163 [ 700/1251 ( 56%)]  Loss: 4.170 (4.04)  Time: 0.613s, 1670.90/s  (0.637s, 1606.33/s)  LR: 4.327e-04  Data: 0.019 (0.039)
+Train: 163 [ 750/1251 ( 60%)]  Loss: 4.210 (4.05)  Time: 0.616s, 1663.11/s  (0.636s, 1610.08/s)  LR: 4.327e-04  Data: 0.021 (0.038)
+Train: 163 [ 800/1251 ( 64%)]  Loss: 3.876 (4.04)  Time: 0.616s, 1662.75/s  (0.635s, 1613.34/s)  LR: 4.327e-04  Data: 0.018 (0.037)
+Train: 163 [ 850/1251 ( 68%)]  Loss: 3.975 (4.04)  Time: 0.617s, 1660.21/s  (0.634s, 1616.25/s)  LR: 4.327e-04  Data: 0.021 (0.036)
+Train: 163 [ 900/1251 ( 72%)]  Loss: 4.311 (4.05)  Time: 0.615s, 1665.67/s  (0.633s, 1618.85/s)  LR: 4.327e-04  Data: 0.018 (0.035)
+Train: 163 [ 950/1251 ( 76%)]  Loss: 4.055 (4.05)  Time: 0.616s, 1661.86/s  (0.632s, 1621.17/s)  LR: 4.327e-04  Data: 0.020 (0.034)
+Train: 163 [1000/1251 ( 80%)]  Loss: 4.047 (4.05)  Time: 0.618s, 1656.45/s  (0.631s, 1623.25/s)  LR: 4.327e-04  Data: 0.017 (0.033)
+Train: 163 [1050/1251 ( 84%)]  Loss: 3.877 (4.04)  Time: 0.614s, 1668.04/s  (0.630s, 1625.16/s)  LR: 4.327e-04  Data: 0.018 (0.032)
+Train: 163 [1100/1251 ( 88%)]  Loss: 3.844 (4.03)  Time: 0.616s, 1662.29/s  (0.629s, 1626.90/s)  LR: 4.327e-04  Data: 0.017 (0.032)
+Train: 163 [1150/1251 ( 92%)]  Loss: 3.586 (4.02)  Time: 0.614s, 1667.19/s  (0.629s, 1628.56/s)  LR: 4.327e-04  Data: 0.018 (0.031)
+Train: 163 [1200/1251 ( 96%)]  Loss: 3.640 (4.00)  Time: 0.614s, 1667.55/s  (0.628s, 1630.18/s)  LR: 4.327e-04  Data: 0.016 (0.031)
+Train: 163 [1250/1251 (100%)]  Loss: 3.970 (4.00)  Time: 0.596s, 1717.85/s  (0.628s, 1631.72/s)  LR: 4.327e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.277 (9.277)  Loss:  0.8227 (0.8227)  Acc@1: 86.9141 (86.9141)  Acc@5: 97.0703 (97.0703)
+Test: [  48/48]  Time: 0.116 (0.340)  Loss:  0.9203 (1.4409)  Acc@1: 82.9009 (70.8660)  Acc@5: 95.2830 (90.7100)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 164 [   0/1251 (  0%)]  Loss: 3.466 (3.47)  Time: 14.952s,   68.49/s  (14.952s,   68.49/s)  LR: 4.275e-04  Data: 14.144 (14.144)
+Train: 164 [  50/1251 (  4%)]  Loss: 4.146 (3.81)  Time: 0.613s, 1671.21/s  (0.915s, 1119.37/s)  LR: 4.275e-04  Data: 0.017 (0.306)
+Train: 164 [ 100/1251 (  8%)]  Loss: 4.414 (4.01)  Time: 0.615s, 1665.88/s  (0.767s, 1334.99/s)  LR: 4.275e-04  Data: 0.019 (0.164)
+Train: 164 [ 150/1251 ( 12%)]  Loss: 4.227 (4.06)  Time: 0.612s, 1672.29/s  (0.716s, 1429.29/s)  LR: 4.275e-04  Data: 0.017 (0.116)
+Train: 164 [ 200/1251 ( 16%)]  Loss: 4.103 (4.07)  Time: 0.614s, 1667.85/s  (0.691s, 1481.52/s)  LR: 4.275e-04  Data: 0.019 (0.091)
+Train: 164 [ 250/1251 ( 20%)]  Loss: 3.596 (3.99)  Time: 0.617s, 1660.82/s  (0.676s, 1514.58/s)  LR: 4.275e-04  Data: 0.017 (0.077)
+Train: 164 [ 300/1251 ( 24%)]  Loss: 3.954 (3.99)  Time: 0.613s, 1670.33/s  (0.666s, 1537.47/s)  LR: 4.275e-04  Data: 0.017 (0.067)
+Train: 164 [ 350/1251 ( 28%)]  Loss: 4.219 (4.02)  Time: 0.615s, 1663.86/s  (0.659s, 1554.26/s)  LR: 4.275e-04  Data: 0.021 (0.061)
+Train: 164 [ 400/1251 ( 32%)]  Loss: 3.589 (3.97)  Time: 0.613s, 1670.22/s  (0.653s, 1567.16/s)  LR: 4.275e-04  Data: 0.018 (0.055)
+Train: 164 [ 450/1251 ( 36%)]  Loss: 4.283 (4.00)  Time: 0.614s, 1667.24/s  (0.649s, 1577.40/s)  LR: 4.275e-04  Data: 0.018 (0.051)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+Prune rate: 2.1086223423165356
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+Prune rate: 2.1086223423165356
+
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472Prune rate: 2.1086223423165356
+
+
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 2.1086223423165356
+
+Train: 164 [ 500/1251 ( 40%)]  Loss: 4.261 (4.02)  Time: 0.615s, 1665.28/s  (0.646s, 1585.61/s)  LR: 4.275e-04  Data: 0.018 (0.048)
+Train: 164 [ 550/1251 ( 44%)]  Loss: 3.597 (3.99)  Time: 0.616s, 1662.57/s  (0.643s, 1592.47/s)  LR: 4.275e-04  Data: 0.019 (0.045)
+Train: 164 [ 600/1251 ( 48%)]  Loss: 4.107 (4.00)  Time: 0.616s, 1663.53/s  (0.641s, 1598.28/s)  LR: 4.275e-04  Data: 0.018 (0.043)
+Train: 164 [ 650/1251 ( 52%)]  Loss: 3.600 (3.97)  Time: 0.615s, 1666.18/s  (0.639s, 1603.15/s)  LR: 4.275e-04  Data: 0.019 (0.041)
+Train: 164 [ 700/1251 ( 56%)]  Loss: 3.871 (3.96)  Time: 0.616s, 1662.80/s  (0.637s, 1607.39/s)  LR: 4.275e-04  Data: 0.021 (0.040)
+Train: 164 [ 750/1251 ( 60%)]  Loss: 4.153 (3.97)  Time: 0.613s, 1669.19/s  (0.636s, 1611.08/s)  LR: 4.275e-04  Data: 0.017 (0.038)
+Train: 164 [ 800/1251 ( 64%)]  Loss: 3.473 (3.94)  Time: 0.616s, 1662.95/s  (0.634s, 1614.27/s)  LR: 4.275e-04  Data: 0.019 (0.037)
+Train: 164 [ 850/1251 ( 68%)]  Loss: 3.776 (3.94)  Time: 0.615s, 1663.78/s  (0.633s, 1617.14/s)  LR: 4.275e-04  Data: 0.018 (0.036)
+Train: 164 [ 900/1251 ( 72%)]  Loss: 4.059 (3.94)  Time: 0.617s, 1660.13/s  (0.632s, 1619.65/s)  LR: 4.275e-04  Data: 0.019 (0.035)
+Train: 164 [ 950/1251 ( 76%)]  Loss: 3.765 (3.93)  Time: 0.615s, 1664.72/s  (0.631s, 1621.97/s)  LR: 4.275e-04  Data: 0.017 (0.034)
+Train: 164 [1000/1251 ( 80%)]  Loss: 3.413 (3.91)  Time: 0.615s, 1664.59/s  (0.631s, 1624.06/s)  LR: 4.275e-04  Data: 0.020 (0.034)
+Train: 164 [1050/1251 ( 84%)]  Loss: 3.498 (3.89)  Time: 0.615s, 1666.03/s  (0.630s, 1625.95/s)  LR: 4.275e-04  Data: 0.018 (0.033)
+Train: 164 [1100/1251 ( 88%)]  Loss: 3.952 (3.89)  Time: 0.616s, 1661.45/s  (0.629s, 1627.69/s)  LR: 4.275e-04  Data: 0.021 (0.032)
+Train: 164 [1150/1251 ( 92%)]  Loss: 3.430 (3.87)  Time: 0.614s, 1668.92/s  (0.628s, 1629.30/s)  LR: 4.275e-04  Data: 0.017 (0.032)
+Train: 164 [1200/1251 ( 96%)]  Loss: 3.795 (3.87)  Time: 0.615s, 1665.93/s  (0.628s, 1630.86/s)  LR: 4.275e-04  Data: 0.020 (0.031)
+Train: 164 [1250/1251 (100%)]  Loss: 3.861 (3.87)  Time: 0.595s, 1721.43/s  (0.627s, 1632.35/s)  LR: 4.275e-04  Data: 0.000 (0.031)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.282 (9.282)  Loss:  0.8254 (0.8254)  Acc@1: 87.6953 (87.6953)  Acc@5: 96.7773 (96.7773)
+Test: [  48/48]  Time: 0.116 (0.340)  Loss:  0.9902 (1.4424)  Acc@1: 82.9009 (71.1320)  Acc@5: 94.9293 (90.8060)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 165 [   0/1251 (  0%)]  Loss: 3.671 (3.67)  Time: 15.088s,   67.87/s  (15.088s,   67.87/s)  LR: 4.224e-04  Data: 14.480 (14.480)
+Train: 165 [  50/1251 (  4%)]  Loss: 4.056 (3.86)  Time: 0.613s, 1671.45/s  (0.909s, 1125.95/s)  LR: 4.224e-04  Data: 0.017 (0.303)
+Train: 165 [ 100/1251 (  8%)]  Loss: 3.666 (3.80)  Time: 0.612s, 1671.95/s  (0.764s, 1339.62/s)  LR: 4.224e-04  Data: 0.018 (0.162)
+Train: 165 [ 150/1251 ( 12%)]  Loss: 3.611 (3.75)  Time: 0.616s, 1661.58/s  (0.715s, 1432.66/s)  LR: 4.224e-04  Data: 0.018 (0.115)
+Train: 165 [ 200/1251 ( 16%)]  Loss: 4.110 (3.82)  Time: 0.617s, 1659.70/s  (0.690s, 1484.28/s)  LR: 4.224e-04  Data: 0.021 (0.091)
+Train: 165 [ 250/1251 ( 20%)]  Loss: 3.909 (3.84)  Time: 0.615s, 1665.01/s  (0.675s, 1517.01/s)  LR: 4.224e-04  Data: 0.018 (0.076)
+Train: 165 [ 300/1251 ( 24%)]  Loss: 4.153 (3.88)  Time: 0.616s, 1661.90/s  (0.665s, 1539.76/s)  LR: 4.224e-04  Data: 0.019 (0.067)
+Train: 165 [ 350/1251 ( 28%)]  Loss: 3.898 (3.88)  Time: 0.616s, 1662.81/s  (0.658s, 1556.37/s)  LR: 4.224e-04  Data: 0.020 (0.060)
+Train: 165 [ 400/1251 ( 32%)]  Loss: 3.499 (3.84)  Time: 0.617s, 1658.57/s  (0.653s, 1569.08/s)  LR: 4.224e-04  Data: 0.022 (0.055)
+Train: 165 [ 450/1251 ( 36%)]  Loss: 3.917 (3.85)  Time: 0.617s, 1660.45/s  (0.648s, 1579.10/s)  LR: 4.224e-04  Data: 0.022 (0.051)
+Train: 165 [ 500/1251 ( 40%)]  Loss: 4.180 (3.88)  Time: 0.615s, 1664.28/s  (0.645s, 1587.15/s)  LR: 4.224e-04  Data: 0.018 (0.048)
+Train: 165 [ 550/1251 ( 44%)]  Loss: 3.800 (3.87)  Time: 0.616s, 1663.12/s  (0.642s, 1593.81/s)  LR: 4.224e-04  Data: 0.019 (0.045)
+Train: 165 [ 600/1251 ( 48%)]  Loss: 3.878 (3.87)  Time: 0.614s, 1667.86/s  (0.640s, 1599.41/s)  LR: 4.224e-04  Data: 0.019 (0.043)
+Train: 165 [ 650/1251 ( 52%)]  Loss: 4.166 (3.89)  Time: 0.616s, 1663.30/s  (0.638s, 1604.20/s)  LR: 4.224e-04  Data: 0.021 (0.041)
+Train: 165 [ 700/1251 ( 56%)]  Loss: 3.628 (3.88)  Time: 0.614s, 1668.18/s  (0.637s, 1608.36/s)  LR: 4.224e-04  Data: 0.019 (0.040)
+Train: 165 [ 750/1251 ( 60%)]  Loss: 3.967 (3.88)  Time: 0.615s, 1664.38/s  (0.635s, 1611.95/s)  LR: 4.224e-04  Data: 0.021 (0.038)
+Train: 165 [ 800/1251 ( 64%)]  Loss: 3.663 (3.87)  Time: 0.614s, 1667.92/s  (0.634s, 1615.12/s)  LR: 4.224e-04  Data: 0.018 (0.037)
+Train: 165 [ 850/1251 ( 68%)]  Loss: 3.915 (3.87)  Time: 0.617s, 1659.99/s  (0.633s, 1617.95/s)  LR: 4.224e-04  Data: 0.019 (0.036)
+Train: 165 [ 900/1251 ( 72%)]  Loss: 4.080 (3.88)  Time: 0.617s, 1659.73/s  (0.632s, 1620.41/s)  LR: 4.224e-04  Data: 0.020 (0.035)
+Train: 165 [ 950/1251 ( 76%)]  Loss: 4.107 (3.89)  Time: 0.614s, 1668.64/s  (0.631s, 1622.63/s)  LR: 4.224e-04  Data: 0.019 (0.034)
+Train: 165 [1000/1251 ( 80%)]  Loss: 3.689 (3.88)  Time: 0.617s, 1658.72/s  (0.630s, 1624.65/s)  LR: 4.224e-04  Data: 0.018 (0.033)
+Train: 165 [1050/1251 ( 84%)]  Loss: 3.634 (3.87)  Time: 0.615s, 1665.93/s  (0.630s, 1626.46/s)  LR: 4.224e-04  Data: 0.019 (0.033)
+Train: 165 [1100/1251 ( 88%)]  Loss: 4.114 (3.88)  Time: 0.617s, 1660.21/s  (0.629s, 1628.10/s)  LR: 4.224e-04  Data: 0.017 (0.032)
+Train: 165 [1150/1251 ( 92%)]  Loss: 4.194 (3.90)  Time: 0.614s, 1669.08/s  (0.628s, 1629.72/s)  LR: 4.224e-04  Data: 0.018 (0.032)
+Train: 165 [1200/1251 ( 96%)]  Loss: 4.053 (3.90)  Time: 0.612s, 1672.76/s  (0.628s, 1631.27/s)  LR: 4.224e-04  Data: 0.017 (0.031)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+
+Prune rate: 2.682250558272928
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+Prune rate: 2.682250558272928
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 2.682250558272928
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 2.682250558272928
+
+Train: 165 [1250/1251 (100%)]  Loss: 4.179 (3.91)  Time: 0.595s, 1720.61/s  (0.627s, 1632.73/s)  LR: 4.224e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.214 (9.214)  Loss:  0.8215 (0.8215)  Acc@1: 85.9375 (85.9375)  Acc@5: 96.5820 (96.5820)
+Test: [  48/48]  Time: 0.116 (0.340)  Loss:  1.0329 (1.4658)  Acc@1: 82.4292 (70.3360)  Acc@5: 94.5755 (90.3700)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-165.pth.tar', 70.33599999511719)
+
+Train: 166 [   0/1251 (  0%)]  Loss: 4.125 (4.12)  Time: 14.798s,   69.20/s  (14.798s,   69.20/s)  LR: 4.172e-04  Data: 13.436 (13.436)
+Train: 166 [  50/1251 (  4%)]  Loss: 3.313 (3.72)  Time: 0.615s, 1664.85/s  (0.913s, 1121.97/s)  LR: 4.172e-04  Data: 0.017 (0.290)
+Train: 166 [ 100/1251 (  8%)]  Loss: 4.017 (3.82)  Time: 0.615s, 1665.54/s  (0.766s, 1336.36/s)  LR: 4.172e-04  Data: 0.019 (0.156)
+Train: 166 [ 150/1251 ( 12%)]  Loss: 4.019 (3.87)  Time: 0.617s, 1660.61/s  (0.716s, 1430.13/s)  LR: 4.172e-04  Data: 0.018 (0.110)
+Train: 166 [ 200/1251 ( 16%)]  Loss: 3.884 (3.87)  Time: 0.614s, 1667.88/s  (0.691s, 1482.13/s)  LR: 4.172e-04  Data: 0.017 (0.087)
+Train: 166 [ 250/1251 ( 20%)]  Loss: 3.542 (3.82)  Time: 0.615s, 1665.81/s  (0.676s, 1515.10/s)  LR: 4.172e-04  Data: 0.017 (0.074)
+Train: 166 [ 300/1251 ( 24%)]  Loss: 3.930 (3.83)  Time: 0.616s, 1663.19/s  (0.666s, 1538.02/s)  LR: 4.172e-04  Data: 0.020 (0.065)
+Train: 166 [ 350/1251 ( 28%)]  Loss: 3.360 (3.77)  Time: 0.615s, 1666.36/s  (0.659s, 1554.75/s)  LR: 4.172e-04  Data: 0.018 (0.058)
+Train: 166 [ 400/1251 ( 32%)]  Loss: 4.329 (3.84)  Time: 0.616s, 1661.35/s  (0.653s, 1567.58/s)  LR: 4.172e-04  Data: 0.022 (0.053)
+Train: 166 [ 450/1251 ( 36%)]  Loss: 3.873 (3.84)  Time: 0.617s, 1659.41/s  (0.649s, 1577.72/s)  LR: 4.172e-04  Data: 0.023 (0.050)
+Train: 166 [ 500/1251 ( 40%)]  Loss: 3.567 (3.81)  Time: 0.614s, 1667.86/s  (0.646s, 1585.95/s)  LR: 4.172e-04  Data: 0.018 (0.047)
+Train: 166 [ 550/1251 ( 44%)]  Loss: 3.760 (3.81)  Time: 0.616s, 1661.84/s  (0.643s, 1592.77/s)  LR: 4.172e-04  Data: 0.020 (0.044)
+Train: 166 [ 600/1251 ( 48%)]  Loss: 3.952 (3.82)  Time: 0.615s, 1666.11/s  (0.641s, 1598.44/s)  LR: 4.172e-04  Data: 0.018 (0.042)
+Train: 166 [ 650/1251 ( 52%)]  Loss: 3.636 (3.81)  Time: 0.615s, 1665.77/s  (0.639s, 1603.33/s)  LR: 4.172e-04  Data: 0.019 (0.040)
+Train: 166 [ 700/1251 ( 56%)]  Loss: 4.255 (3.84)  Time: 0.617s, 1658.81/s  (0.637s, 1607.51/s)  LR: 4.172e-04  Data: 0.020 (0.039)
+Train: 166 [ 750/1251 ( 60%)]  Loss: 3.654 (3.83)  Time: 0.615s, 1666.12/s  (0.636s, 1611.17/s)  LR: 4.172e-04  Data: 0.020 (0.037)
+Train: 166 [ 800/1251 ( 64%)]  Loss: 4.064 (3.84)  Time: 0.617s, 1660.26/s  (0.634s, 1614.37/s)  LR: 4.172e-04  Data: 0.022 (0.036)
+Train: 166 [ 850/1251 ( 68%)]  Loss: 4.038 (3.85)  Time: 0.615s, 1665.96/s  (0.633s, 1617.16/s)  LR: 4.172e-04  Data: 0.018 (0.035)
+Train: 166 [ 900/1251 ( 72%)]  Loss: 4.094 (3.86)  Time: 0.615s, 1665.87/s  (0.632s, 1619.69/s)  LR: 4.172e-04  Data: 0.019 (0.034)
+Train: 166 [ 950/1251 ( 76%)]  Loss: 3.948 (3.87)  Time: 0.614s, 1668.96/s  (0.631s, 1621.98/s)  LR: 4.172e-04  Data: 0.018 (0.034)
+Train: 166 [1000/1251 ( 80%)]  Loss: 4.101 (3.88)  Time: 0.617s, 1659.68/s  (0.631s, 1623.99/s)  LR: 4.172e-04  Data: 0.020 (0.033)
+Train: 166 [1050/1251 ( 84%)]  Loss: 3.786 (3.87)  Time: 0.615s, 1664.85/s  (0.630s, 1625.88/s)  LR: 4.172e-04  Data: 0.021 (0.032)
+Train: 166 [1100/1251 ( 88%)]  Loss: 3.711 (3.87)  Time: 0.614s, 1667.37/s  (0.629s, 1627.58/s)  LR: 4.172e-04  Data: 0.018 (0.032)
+Train: 166 [1150/1251 ( 92%)]  Loss: 3.611 (3.86)  Time: 0.614s, 1668.16/s  (0.629s, 1629.18/s)  LR: 4.172e-04  Data: 0.018 (0.031)
+Train: 166 [1200/1251 ( 96%)]  Loss: 4.065 (3.87)  Time: 0.613s, 1670.45/s  (0.628s, 1630.75/s)  LR: 4.172e-04  Data: 0.018 (0.030)
+Train: 166 [1250/1251 (100%)]  Loss: 3.583 (3.85)  Time: 0.595s, 1720.42/s  (0.627s, 1632.27/s)  LR: 4.172e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.266 (9.266)  Loss:  0.8621 (0.8621)  Acc@1: 87.3047 (87.3047)  Acc@5: 97.0703 (97.0703)
+Test: [  48/48]  Time: 0.116 (0.340)  Loss:  0.9528 (1.4772)  Acc@1: 82.6651 (70.8940)  Acc@5: 95.5189 (90.7220)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-166.pth.tar', 70.89400009765625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-165.pth.tar', 70.33599999511719)
+
+Train: 167 [   0/1251 (  0%)]  Loss: 3.579 (3.58)  Time: 15.218s,   67.29/s  (15.218s,   67.29/s)  LR: 4.120e-04  Data: 14.098 (14.098)
+Train: 167 [  50/1251 (  4%)]  Loss: 3.851 (3.71)  Time: 0.612s, 1672.49/s  (0.915s, 1119.04/s)  LR: 4.120e-04  Data: 0.017 (0.299)
+Train: 167 [ 100/1251 (  8%)]  Loss: 3.898 (3.78)  Time: 0.616s, 1663.40/s  (0.768s, 1334.15/s)  LR: 4.120e-04  Data: 0.019 (0.160)
+Train: 167 [ 150/1251 ( 12%)]  Loss: 3.653 (3.75)  Time: 0.614s, 1668.85/s  (0.717s, 1428.40/s)  LR: 4.120e-04  Data: 0.018 (0.113)
+Train: 167 [ 200/1251 ( 16%)]  Loss: 4.323 (3.86)  Time: 0.616s, 1662.02/s  (0.692s, 1480.59/s)  LR: 4.120e-04  Data: 0.018 (0.090)
+Train: 167 [ 250/1251 ( 20%)]  Loss: 4.161 (3.91)  Time: 0.614s, 1666.89/s  (0.676s, 1513.80/s)  LR: 4.120e-04  Data: 0.018 (0.076)
+Train: 167 [ 300/1251 ( 24%)]  Loss: 3.409 (3.84)  Time: 0.616s, 1662.80/s  (0.666s, 1536.75/s)  LR: 4.120e-04  Data: 0.017 (0.066)
+Train: 167 [ 350/1251 ( 28%)]  Loss: 4.185 (3.88)  Time: 0.615s, 1666.38/s  (0.659s, 1553.66/s)  LR: 4.120e-04  Data: 0.018 (0.060)
+Train: 167 [ 400/1251 ( 32%)]  Loss: 3.396 (3.83)  Time: 0.614s, 1666.84/s  (0.654s, 1566.65/s)  LR: 4.120e-04  Data: 0.018 (0.055)
+Train: 167 [ 450/1251 ( 36%)]  Loss: 4.110 (3.86)  Time: 0.617s, 1660.86/s  (0.649s, 1576.93/s)  LR: 4.120e-04  Data: 0.020 (0.051)
+Train: 167 [ 500/1251 ( 40%)]  Loss: 4.017 (3.87)  Time: 0.615s, 1665.75/s  (0.646s, 1585.15/s)  LR: 4.120e-04  Data: 0.019 (0.048)
+Train: 167 [ 550/1251 ( 44%)]  Loss: 3.805 (3.87)  Time: 0.614s, 1667.53/s  (0.643s, 1591.99/s)  LR: 4.120e-04  Data: 0.017 (0.045)
+Train: 167 [ 600/1251 ( 48%)]  Loss: 3.711 (3.85)  Time: 0.616s, 1661.65/s  (0.641s, 1597.72/s)  LR: 4.120e-04  Data: 0.019 (0.043)
+Train: 167 [ 650/1251 ( 52%)]  Loss: 4.213 (3.88)  Time: 0.617s, 1660.86/s  (0.639s, 1602.65/s)  LR: 4.120e-04  Data: 0.020 (0.041)
+Train: 167 [ 700/1251 ( 56%)]  Loss: 3.745 (3.87)  Time: 0.616s, 1661.48/s  (0.637s, 1606.91/s)  LR: 4.120e-04  Data: 0.018 (0.039)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+
+Prune rate: 3.3233271557954946
+
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+Prune rate: 3.3233271557954946
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+
+Prune rate: 3.3233271557954946
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 3.3233271557954946
+
+Train: 167 [ 750/1251 ( 60%)]  Loss: 3.915 (3.87)  Time: 0.614s, 1668.74/s  (0.636s, 1610.51/s)  LR: 4.120e-04  Data: 0.019 (0.038)
+Train: 167 [ 800/1251 ( 64%)]  Loss: 3.818 (3.87)  Time: 0.617s, 1658.77/s  (0.635s, 1613.76/s)  LR: 4.120e-04  Data: 0.021 (0.037)
+Train: 167 [ 850/1251 ( 68%)]  Loss: 3.973 (3.88)  Time: 0.616s, 1663.21/s  (0.633s, 1616.64/s)  LR: 4.120e-04  Data: 0.021 (0.036)
+Train: 167 [ 900/1251 ( 72%)]  Loss: 3.573 (3.86)  Time: 0.616s, 1662.60/s  (0.632s, 1619.16/s)  LR: 4.120e-04  Data: 0.021 (0.035)
+Train: 167 [ 950/1251 ( 76%)]  Loss: 3.579 (3.85)  Time: 0.615s, 1664.75/s  (0.632s, 1621.44/s)  LR: 4.120e-04  Data: 0.020 (0.034)
+Train: 167 [1000/1251 ( 80%)]  Loss: 3.921 (3.85)  Time: 0.615s, 1665.24/s  (0.631s, 1623.50/s)  LR: 4.120e-04  Data: 0.018 (0.033)
+Train: 167 [1050/1251 ( 84%)]  Loss: 4.287 (3.87)  Time: 0.615s, 1665.48/s  (0.630s, 1625.34/s)  LR: 4.120e-04  Data: 0.018 (0.033)
+Train: 167 [1100/1251 ( 88%)]  Loss: 3.755 (3.86)  Time: 0.616s, 1661.76/s  (0.629s, 1627.04/s)  LR: 4.120e-04  Data: 0.022 (0.032)
+Train: 167 [1150/1251 ( 92%)]  Loss: 3.732 (3.86)  Time: 0.614s, 1667.34/s  (0.629s, 1628.71/s)  LR: 4.120e-04  Data: 0.017 (0.031)
+Train: 167 [1200/1251 ( 96%)]  Loss: 3.568 (3.85)  Time: 0.613s, 1670.04/s  (0.628s, 1630.29/s)  LR: 4.120e-04  Data: 0.017 (0.031)
+Train: 167 [1250/1251 (100%)]  Loss: 3.896 (3.85)  Time: 0.596s, 1718.22/s  (0.628s, 1631.82/s)  LR: 4.120e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.364 (9.364)  Loss:  0.8931 (0.8931)  Acc@1: 87.0117 (87.0117)  Acc@5: 97.4609 (97.4609)
+Test: [  48/48]  Time: 0.116 (0.342)  Loss:  1.0626 (1.4813)  Acc@1: 82.1934 (71.0320)  Acc@5: 94.5755 (90.7280)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-167.pth.tar', 71.03200002197265)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-166.pth.tar', 70.89400009765625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-165.pth.tar', 70.33599999511719)
+
+Train: 168 [   0/1251 (  0%)]  Loss: 3.908 (3.91)  Time: 15.266s,   67.08/s  (15.266s,   67.08/s)  LR: 4.069e-04  Data: 14.522 (14.522)
+Train: 168 [  50/1251 (  4%)]  Loss: 3.946 (3.93)  Time: 0.616s, 1663.37/s  (0.926s, 1106.21/s)  LR: 4.069e-04  Data: 0.019 (0.309)
+Train: 168 [ 100/1251 (  8%)]  Loss: 3.717 (3.86)  Time: 0.617s, 1660.12/s  (0.772s, 1325.62/s)  LR: 4.069e-04  Data: 0.019 (0.166)
+Train: 168 [ 150/1251 ( 12%)]  Loss: 4.087 (3.91)  Time: 0.616s, 1661.43/s  (0.720s, 1421.87/s)  LR: 4.069e-04  Data: 0.021 (0.117)
+Train: 168 [ 200/1251 ( 16%)]  Loss: 4.009 (3.93)  Time: 0.616s, 1663.08/s  (0.694s, 1475.45/s)  LR: 4.069e-04  Data: 0.022 (0.093)
+Train: 168 [ 250/1251 ( 20%)]  Loss: 4.032 (3.95)  Time: 0.617s, 1659.23/s  (0.678s, 1509.57/s)  LR: 4.069e-04  Data: 0.020 (0.078)
+Train: 168 [ 300/1251 ( 24%)]  Loss: 4.406 (4.02)  Time: 0.616s, 1663.07/s  (0.668s, 1533.24/s)  LR: 4.069e-04  Data: 0.022 (0.068)
+Train: 168 [ 350/1251 ( 28%)]  Loss: 3.857 (4.00)  Time: 0.616s, 1661.10/s  (0.660s, 1550.55/s)  LR: 4.069e-04  Data: 0.019 (0.061)
+Train: 168 [ 400/1251 ( 32%)]  Loss: 3.443 (3.93)  Time: 0.617s, 1659.19/s  (0.655s, 1563.90/s)  LR: 4.069e-04  Data: 0.020 (0.056)
+Train: 168 [ 450/1251 ( 36%)]  Loss: 4.167 (3.96)  Time: 0.614s, 1668.91/s  (0.650s, 1574.43/s)  LR: 4.069e-04  Data: 0.019 (0.052)
+Train: 168 [ 500/1251 ( 40%)]  Loss: 3.840 (3.95)  Time: 0.614s, 1668.85/s  (0.647s, 1582.94/s)  LR: 4.069e-04  Data: 0.019 (0.049)
+Train: 168 [ 550/1251 ( 44%)]  Loss: 4.016 (3.95)  Time: 0.616s, 1663.29/s  (0.644s, 1589.95/s)  LR: 4.069e-04  Data: 0.020 (0.046)
+Train: 168 [ 600/1251 ( 48%)]  Loss: 3.768 (3.94)  Time: 0.614s, 1668.36/s  (0.642s, 1595.90/s)  LR: 4.069e-04  Data: 0.018 (0.044)
+Train: 168 [ 650/1251 ( 52%)]  Loss: 4.241 (3.96)  Time: 0.614s, 1666.49/s  (0.640s, 1600.93/s)  LR: 4.069e-04  Data: 0.018 (0.042)
+Train: 168 [ 700/1251 ( 56%)]  Loss: 3.749 (3.95)  Time: 0.614s, 1667.09/s  (0.638s, 1605.29/s)  LR: 4.069e-04  Data: 0.019 (0.040)
+Train: 168 [ 750/1251 ( 60%)]  Loss: 4.322 (3.97)  Time: 0.615s, 1664.98/s  (0.636s, 1609.05/s)  LR: 4.069e-04  Data: 0.018 (0.039)
+Train: 168 [ 800/1251 ( 64%)]  Loss: 4.235 (3.98)  Time: 0.613s, 1670.79/s  (0.635s, 1612.36/s)  LR: 4.069e-04  Data: 0.018 (0.038)
+Train: 168 [ 850/1251 ( 68%)]  Loss: 4.104 (3.99)  Time: 0.616s, 1662.60/s  (0.634s, 1615.32/s)  LR: 4.069e-04  Data: 0.021 (0.036)
+Train: 168 [ 900/1251 ( 72%)]  Loss: 3.566 (3.97)  Time: 0.616s, 1662.08/s  (0.633s, 1617.91/s)  LR: 4.069e-04  Data: 0.021 (0.036)
+Train: 168 [ 950/1251 ( 76%)]  Loss: 4.070 (3.97)  Time: 0.616s, 1661.52/s  (0.632s, 1620.22/s)  LR: 4.069e-04  Data: 0.019 (0.035)
+Train: 168 [1000/1251 ( 80%)]  Loss: 3.798 (3.97)  Time: 0.618s, 1656.90/s  (0.631s, 1622.34/s)  LR: 4.069e-04  Data: 0.019 (0.034)
+Train: 168 [1050/1251 ( 84%)]  Loss: 3.693 (3.95)  Time: 0.614s, 1667.30/s  (0.630s, 1624.24/s)  LR: 4.069e-04  Data: 0.018 (0.033)
+Train: 168 [1100/1251 ( 88%)]  Loss: 4.296 (3.97)  Time: 0.617s, 1658.52/s  (0.630s, 1625.98/s)  LR: 4.069e-04  Data: 0.020 (0.033)
+Train: 168 [1150/1251 ( 92%)]  Loss: 3.599 (3.95)  Time: 0.612s, 1672.26/s  (0.629s, 1627.65/s)  LR: 4.069e-04  Data: 0.017 (0.032)
+Train: 168 [1200/1251 ( 96%)]  Loss: 4.057 (3.96)  Time: 0.615s, 1665.04/s  (0.628s, 1629.32/s)  LR: 4.069e-04  Data: 0.018 (0.031)
+Train: 168 [1250/1251 (100%)]  Loss: 3.562 (3.94)  Time: 0.595s, 1721.57/s  (0.628s, 1630.89/s)  LR: 4.069e-04  Data: 0.000 (0.031)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.246 (9.246)  Loss:  0.8350 (0.8350)  Acc@1: 87.0117 (87.0117)  Acc@5: 96.6797 (96.6797)
+Test: [  48/48]  Time: 0.116 (0.340)  Loss:  0.9736 (1.4188)  Acc@1: 82.3113 (71.3860)  Acc@5: 95.2830 (90.8400)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-168.pth.tar', 71.38600007324219)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-167.pth.tar', 71.03200002197265)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-166.pth.tar', 70.89400009765625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-158.pth.tar', 70.828)
+
+Train: 169 [   0/1251 (  0%)]  Loss: 3.224 (3.22)  Time: 14.598s,   70.15/s  (14.598s,   70.15/s)  LR: 4.018e-04  Data: 13.299 (13.299)
+Train: 169 [  50/1251 (  4%)]  Loss: 3.102 (3.16)  Time: 0.613s, 1670.58/s  (0.921s, 1112.11/s)  LR: 4.018e-04  Data: 0.017 (0.291)
+Train: 169 [ 100/1251 (  8%)]  Loss: 4.132 (3.49)  Time: 0.617s, 1659.77/s  (0.771s, 1328.70/s)  LR: 4.018e-04  Data: 0.018 (0.157)
+Train: 169 [ 150/1251 ( 12%)]  Loss: 4.224 (3.67)  Time: 0.614s, 1666.87/s  (0.719s, 1424.20/s)  LR: 4.018e-04  Data: 0.018 (0.111)
+Train: 169 [ 200/1251 ( 16%)]  Loss: 3.964 (3.73)  Time: 0.618s, 1656.23/s  (0.693s, 1477.17/s)  LR: 4.018e-04  Data: 0.021 (0.088)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+Prune rate: 4.031152247203199
+
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 4.031152247203199
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+Prune rate: 4.031152247203199
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 4.031152247203199
+
+Train: 169 [ 250/1251 ( 20%)]  Loss: 4.031 (3.78)  Time: 0.615s, 1663.84/s  (0.678s, 1510.80/s)  LR: 4.018e-04  Data: 0.019 (0.074)
+Train: 169 [ 300/1251 ( 24%)]  Loss: 3.838 (3.79)  Time: 0.619s, 1655.20/s  (0.668s, 1533.93/s)  LR: 4.018e-04  Data: 0.021 (0.065)
+Train: 169 [ 350/1251 ( 28%)]  Loss: 4.347 (3.86)  Time: 0.617s, 1660.43/s  (0.660s, 1551.06/s)  LR: 4.018e-04  Data: 0.019 (0.059)
+Train: 169 [ 400/1251 ( 32%)]  Loss: 3.140 (3.78)  Time: 0.616s, 1663.01/s  (0.655s, 1564.26/s)  LR: 4.018e-04  Data: 0.017 (0.054)
+Train: 169 [ 450/1251 ( 36%)]  Loss: 3.603 (3.76)  Time: 0.616s, 1661.99/s  (0.650s, 1574.67/s)  LR: 4.018e-04  Data: 0.017 (0.050)
+Train: 169 [ 500/1251 ( 40%)]  Loss: 4.144 (3.80)  Time: 0.614s, 1666.92/s  (0.647s, 1583.07/s)  LR: 4.018e-04  Data: 0.018 (0.047)
+Train: 169 [ 550/1251 ( 44%)]  Loss: 3.625 (3.78)  Time: 0.616s, 1663.29/s  (0.644s, 1590.05/s)  LR: 4.018e-04  Data: 0.019 (0.044)
+Train: 169 [ 600/1251 ( 48%)]  Loss: 4.284 (3.82)  Time: 0.614s, 1666.60/s  (0.642s, 1595.89/s)  LR: 4.018e-04  Data: 0.018 (0.042)
+Train: 169 [ 650/1251 ( 52%)]  Loss: 3.861 (3.82)  Time: 0.614s, 1668.63/s  (0.640s, 1600.96/s)  LR: 4.018e-04  Data: 0.018 (0.040)
+Train: 169 [ 700/1251 ( 56%)]  Loss: 3.704 (3.81)  Time: 0.615s, 1665.44/s  (0.638s, 1605.25/s)  LR: 4.018e-04  Data: 0.019 (0.039)
+Train: 169 [ 750/1251 ( 60%)]  Loss: 4.063 (3.83)  Time: 0.615s, 1666.23/s  (0.636s, 1609.00/s)  LR: 4.018e-04  Data: 0.016 (0.038)
+Train: 169 [ 800/1251 ( 64%)]  Loss: 3.634 (3.82)  Time: 0.615s, 1665.08/s  (0.635s, 1612.33/s)  LR: 4.018e-04  Data: 0.018 (0.036)
+Train: 169 [ 850/1251 ( 68%)]  Loss: 3.890 (3.82)  Time: 0.617s, 1659.71/s  (0.634s, 1615.24/s)  LR: 4.018e-04  Data: 0.022 (0.035)
+Train: 169 [ 900/1251 ( 72%)]  Loss: 3.890 (3.83)  Time: 0.617s, 1659.01/s  (0.633s, 1617.85/s)  LR: 4.018e-04  Data: 0.020 (0.035)
+Train: 169 [ 950/1251 ( 76%)]  Loss: 3.988 (3.83)  Time: 0.615s, 1665.87/s  (0.632s, 1620.18/s)  LR: 4.018e-04  Data: 0.018 (0.034)
+Train: 169 [1000/1251 ( 80%)]  Loss: 3.970 (3.84)  Time: 0.615s, 1665.46/s  (0.631s, 1622.27/s)  LR: 4.018e-04  Data: 0.018 (0.033)
+Train: 169 [1050/1251 ( 84%)]  Loss: 3.528 (3.83)  Time: 0.617s, 1660.62/s  (0.630s, 1624.19/s)  LR: 4.018e-04  Data: 0.020 (0.032)
+Train: 169 [1100/1251 ( 88%)]  Loss: 4.105 (3.84)  Time: 0.615s, 1664.80/s  (0.630s, 1625.98/s)  LR: 4.018e-04  Data: 0.021 (0.032)
+Train: 169 [1150/1251 ( 92%)]  Loss: 4.180 (3.85)  Time: 0.614s, 1668.77/s  (0.629s, 1627.66/s)  LR: 4.018e-04  Data: 0.017 (0.031)
+Train: 169 [1200/1251 ( 96%)]  Loss: 4.064 (3.86)  Time: 0.613s, 1671.23/s  (0.628s, 1629.30/s)  LR: 4.018e-04  Data: 0.017 (0.031)
+Train: 169 [1250/1251 (100%)]  Loss: 4.210 (3.87)  Time: 0.595s, 1720.73/s  (0.628s, 1630.81/s)  LR: 4.018e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.285 (9.285)  Loss:  0.9568 (0.9568)  Acc@1: 87.1094 (87.1094)  Acc@5: 96.7773 (96.7773)
+Test: [  48/48]  Time: 0.116 (0.341)  Loss:  1.1424 (1.5797)  Acc@1: 82.1934 (70.8300)  Acc@5: 94.9292 (90.6720)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-168.pth.tar', 71.38600007324219)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-167.pth.tar', 71.03200002197265)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-166.pth.tar', 70.89400009765625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-169.pth.tar', 70.83000002197265)
+
+Train: 170 [   0/1251 (  0%)]  Loss: 4.055 (4.06)  Time: 14.996s,   68.28/s  (14.996s,   68.28/s)  LR: 3.966e-04  Data: 14.404 (14.404)
+Train: 170 [  50/1251 (  4%)]  Loss: 3.518 (3.79)  Time: 0.613s, 1669.86/s  (0.927s, 1105.00/s)  LR: 3.966e-04  Data: 0.017 (0.303)
+Train: 170 [ 100/1251 (  8%)]  Loss: 4.333 (3.97)  Time: 0.615s, 1664.32/s  (0.773s, 1323.92/s)  LR: 3.966e-04  Data: 0.020 (0.162)
+Train: 170 [ 150/1251 ( 12%)]  Loss: 3.957 (3.97)  Time: 0.614s, 1667.11/s  (0.721s, 1420.43/s)  LR: 3.966e-04  Data: 0.017 (0.115)
+Train: 170 [ 200/1251 ( 16%)]  Loss: 3.652 (3.90)  Time: 0.616s, 1662.54/s  (0.695s, 1474.19/s)  LR: 3.966e-04  Data: 0.020 (0.091)
+Train: 170 [ 250/1251 ( 20%)]  Loss: 4.338 (3.98)  Time: 0.613s, 1670.19/s  (0.679s, 1508.49/s)  LR: 3.966e-04  Data: 0.018 (0.077)
+Train: 170 [ 300/1251 ( 24%)]  Loss: 3.782 (3.95)  Time: 0.616s, 1663.26/s  (0.668s, 1532.23/s)  LR: 3.966e-04  Data: 0.018 (0.067)
+Train: 170 [ 350/1251 ( 28%)]  Loss: 3.723 (3.92)  Time: 0.614s, 1668.50/s  (0.661s, 1549.66/s)  LR: 3.966e-04  Data: 0.018 (0.060)
+Train: 170 [ 400/1251 ( 32%)]  Loss: 4.252 (3.96)  Time: 0.614s, 1668.58/s  (0.655s, 1562.99/s)  LR: 3.966e-04  Data: 0.017 (0.055)
+Train: 170 [ 450/1251 ( 36%)]  Loss: 3.885 (3.95)  Time: 0.614s, 1667.44/s  (0.651s, 1573.52/s)  LR: 3.966e-04  Data: 0.018 (0.051)
+Train: 170 [ 500/1251 ( 40%)]  Loss: 4.068 (3.96)  Time: 0.618s, 1657.17/s  (0.647s, 1582.04/s)  LR: 3.966e-04  Data: 0.019 (0.048)
+Train: 170 [ 550/1251 ( 44%)]  Loss: 4.498 (4.01)  Time: 0.617s, 1658.84/s  (0.644s, 1589.10/s)  LR: 3.966e-04  Data: 0.019 (0.045)
+Train: 170 [ 600/1251 ( 48%)]  Loss: 3.764 (3.99)  Time: 0.614s, 1666.67/s  (0.642s, 1595.01/s)  LR: 3.966e-04  Data: 0.019 (0.043)
+Train: 170 [ 650/1251 ( 52%)]  Loss: 3.978 (3.99)  Time: 0.614s, 1667.64/s  (0.640s, 1600.08/s)  LR: 3.966e-04  Data: 0.019 (0.041)
+Train: 170 [ 700/1251 ( 56%)]  Loss: 3.881 (3.98)  Time: 0.618s, 1657.27/s  (0.638s, 1604.42/s)  LR: 3.966e-04  Data: 0.017 (0.040)
+Train: 170 [ 750/1251 ( 60%)]  Loss: 4.180 (3.99)  Time: 0.614s, 1667.13/s  (0.637s, 1608.19/s)  LR: 3.966e-04  Data: 0.018 (0.038)
+Train: 170 [ 800/1251 ( 64%)]  Loss: 3.266 (3.95)  Time: 0.617s, 1660.50/s  (0.635s, 1611.55/s)  LR: 3.966e-04  Data: 0.022 (0.037)
+Train: 170 [ 850/1251 ( 68%)]  Loss: 3.664 (3.93)  Time: 0.617s, 1658.60/s  (0.634s, 1614.48/s)  LR: 3.966e-04  Data: 0.019 (0.036)
+Train: 170 [ 900/1251 ( 72%)]  Loss: 3.782 (3.93)  Time: 0.614s, 1666.42/s  (0.633s, 1617.13/s)  LR: 3.966e-04  Data: 0.019 (0.035)
+Train: 170 [ 950/1251 ( 76%)]  Loss: 4.014 (3.93)  Time: 0.614s, 1666.84/s  (0.632s, 1619.51/s)  LR: 3.966e-04  Data: 0.019 (0.034)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 4.804953072947892
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+Prune rate: 4.804953072947892
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 4.804953072947892
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 4.804953072947892
+
+Train: 170 [1000/1251 ( 80%)]  Loss: 3.872 (3.93)  Time: 0.619s, 1653.94/s  (0.631s, 1621.61/s)  LR: 3.966e-04  Data: 0.020 (0.034)
+Train: 170 [1050/1251 ( 84%)]  Loss: 3.979 (3.93)  Time: 0.614s, 1668.41/s  (0.631s, 1623.57/s)  LR: 3.966e-04  Data: 0.019 (0.033)
+Train: 170 [1100/1251 ( 88%)]  Loss: 4.100 (3.94)  Time: 0.615s, 1664.83/s  (0.630s, 1625.31/s)  LR: 3.966e-04  Data: 0.019 (0.032)
+Train: 170 [1150/1251 ( 92%)]  Loss: 3.568 (3.92)  Time: 0.613s, 1670.14/s  (0.629s, 1627.05/s)  LR: 3.966e-04  Data: 0.018 (0.032)
+Train: 170 [1200/1251 ( 96%)]  Loss: 3.806 (3.92)  Time: 0.615s, 1665.98/s  (0.629s, 1628.70/s)  LR: 3.966e-04  Data: 0.018 (0.031)
+Train: 170 [1250/1251 (100%)]  Loss: 4.249 (3.93)  Time: 0.596s, 1718.81/s  (0.628s, 1630.28/s)  LR: 3.966e-04  Data: 0.000 (0.031)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.210 (9.210)  Loss:  0.8653 (0.8653)  Acc@1: 86.9141 (86.9141)  Acc@5: 97.1680 (97.1680)
+Test: [  48/48]  Time: 0.116 (0.339)  Loss:  0.9229 (1.4649)  Acc@1: 83.1368 (71.3320)  Acc@5: 95.1651 (90.7720)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-168.pth.tar', 71.38600007324219)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-170.pth.tar', 71.33200004394531)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-167.pth.tar', 71.03200002197265)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-166.pth.tar', 70.89400009765625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-163.pth.tar', 70.86599994140624)
+
+Train: 171 [   0/1251 (  0%)]  Loss: 4.003 (4.00)  Time: 14.739s,   69.48/s  (14.739s,   69.48/s)  LR: 3.915e-04  Data: 14.147 (14.147)
+Train: 171 [  50/1251 (  4%)]  Loss: 3.968 (3.99)  Time: 0.616s, 1661.03/s  (0.905s, 1131.88/s)  LR: 3.915e-04  Data: 0.018 (0.297)
+Train: 171 [ 100/1251 (  8%)]  Loss: 4.035 (4.00)  Time: 0.615s, 1666.26/s  (0.762s, 1343.77/s)  LR: 3.915e-04  Data: 0.016 (0.159)
+Train: 171 [ 150/1251 ( 12%)]  Loss: 3.878 (3.97)  Time: 0.615s, 1666.39/s  (0.713s, 1435.67/s)  LR: 3.915e-04  Data: 0.016 (0.113)
+Train: 171 [ 200/1251 ( 16%)]  Loss: 4.121 (4.00)  Time: 0.617s, 1660.64/s  (0.689s, 1486.45/s)  LR: 3.915e-04  Data: 0.022 (0.089)
+Train: 171 [ 250/1251 ( 20%)]  Loss: 3.598 (3.93)  Time: 0.615s, 1666.08/s  (0.674s, 1518.62/s)  LR: 3.915e-04  Data: 0.020 (0.075)
+Train: 171 [ 300/1251 ( 24%)]  Loss: 3.914 (3.93)  Time: 0.614s, 1667.59/s  (0.665s, 1540.89/s)  LR: 3.915e-04  Data: 0.017 (0.066)
+Train: 171 [ 350/1251 ( 28%)]  Loss: 3.728 (3.91)  Time: 0.617s, 1659.99/s  (0.658s, 1557.24/s)  LR: 3.915e-04  Data: 0.020 (0.059)
+Train: 171 [ 400/1251 ( 32%)]  Loss: 3.823 (3.90)  Time: 0.617s, 1658.44/s  (0.652s, 1569.79/s)  LR: 3.915e-04  Data: 0.019 (0.054)
+Train: 171 [ 450/1251 ( 36%)]  Loss: 4.042 (3.91)  Time: 0.617s, 1660.43/s  (0.648s, 1579.68/s)  LR: 3.915e-04  Data: 0.020 (0.050)
+Train: 171 [ 500/1251 ( 40%)]  Loss: 3.828 (3.90)  Time: 0.615s, 1665.80/s  (0.645s, 1587.66/s)  LR: 3.915e-04  Data: 0.020 (0.047)
+Train: 171 [ 550/1251 ( 44%)]  Loss: 3.879 (3.90)  Time: 0.615s, 1663.85/s  (0.642s, 1594.30/s)  LR: 3.915e-04  Data: 0.018 (0.045)
+Train: 171 [ 600/1251 ( 48%)]  Loss: 3.827 (3.90)  Time: 0.615s, 1665.50/s  (0.640s, 1599.83/s)  LR: 3.915e-04  Data: 0.019 (0.043)
+Train: 171 [ 650/1251 ( 52%)]  Loss: 3.707 (3.88)  Time: 0.616s, 1662.89/s  (0.638s, 1604.52/s)  LR: 3.915e-04  Data: 0.022 (0.041)
+Train: 171 [ 700/1251 ( 56%)]  Loss: 3.871 (3.88)  Time: 0.616s, 1663.55/s  (0.637s, 1608.61/s)  LR: 3.915e-04  Data: 0.018 (0.039)
+Train: 171 [ 750/1251 ( 60%)]  Loss: 3.304 (3.85)  Time: 0.616s, 1662.49/s  (0.635s, 1612.14/s)  LR: 3.915e-04  Data: 0.022 (0.038)
+Train: 171 [ 800/1251 ( 64%)]  Loss: 3.600 (3.83)  Time: 0.617s, 1659.64/s  (0.634s, 1615.25/s)  LR: 3.915e-04  Data: 0.019 (0.037)
+Train: 171 [ 850/1251 ( 68%)]  Loss: 3.877 (3.83)  Time: 0.615s, 1663.96/s  (0.633s, 1617.98/s)  LR: 3.915e-04  Data: 0.019 (0.036)
+Train: 171 [ 900/1251 ( 72%)]  Loss: 3.466 (3.81)  Time: 0.614s, 1668.38/s  (0.632s, 1620.47/s)  LR: 3.915e-04  Data: 0.018 (0.035)
+Train: 171 [ 950/1251 ( 76%)]  Loss: 4.184 (3.83)  Time: 0.616s, 1663.49/s  (0.631s, 1622.69/s)  LR: 3.915e-04  Data: 0.018 (0.034)
+Train: 171 [1000/1251 ( 80%)]  Loss: 4.023 (3.84)  Time: 0.616s, 1661.42/s  (0.630s, 1624.68/s)  LR: 3.915e-04  Data: 0.019 (0.033)
+Train: 171 [1050/1251 ( 84%)]  Loss: 3.316 (3.82)  Time: 0.613s, 1670.23/s  (0.630s, 1626.49/s)  LR: 3.915e-04  Data: 0.018 (0.033)
+Train: 171 [1100/1251 ( 88%)]  Loss: 4.064 (3.83)  Time: 0.617s, 1659.89/s  (0.629s, 1628.14/s)  LR: 3.915e-04  Data: 0.016 (0.032)
+Train: 171 [1150/1251 ( 92%)]  Loss: 3.995 (3.84)  Time: 0.615s, 1665.13/s  (0.628s, 1629.77/s)  LR: 3.915e-04  Data: 0.017 (0.031)
+Train: 171 [1200/1251 ( 96%)]  Loss: 4.089 (3.85)  Time: 0.615s, 1664.83/s  (0.628s, 1631.31/s)  LR: 3.915e-04  Data: 0.018 (0.031)
+Train: 171 [1250/1251 (100%)]  Loss: 3.802 (3.84)  Time: 0.596s, 1718.73/s  (0.627s, 1632.75/s)  LR: 3.915e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.685 (9.685)  Loss:  0.7983 (0.7983)  Acc@1: 87.2070 (87.2070)  Acc@5: 97.5586 (97.5586)
+Test: [  48/48]  Time: 0.116 (0.350)  Loss:  0.9734 (1.4036)  Acc@1: 83.1368 (71.3300)  Acc@5: 94.9292 (90.7340)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-168.pth.tar', 71.38600007324219)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-170.pth.tar', 71.33200004394531)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-171.pth.tar', 71.32999991455078)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-167.pth.tar', 71.03200002197265)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-166.pth.tar', 70.89400009765625)
+
+Train: 172 [   0/1251 (  0%)]  Loss: 4.383 (4.38)  Time: 14.265s,   71.78/s  (14.265s,   71.78/s)  LR: 3.864e-04  Data: 13.269 (13.269)
+Train: 172 [  50/1251 (  4%)]  Loss: 4.000 (4.19)  Time: 0.614s, 1668.02/s  (0.892s, 1147.77/s)  LR: 3.864e-04  Data: 0.018 (0.281)
+Train: 172 [ 100/1251 (  8%)]  Loss: 4.020 (4.13)  Time: 0.615s, 1664.22/s  (0.756s, 1355.16/s)  LR: 3.864e-04  Data: 0.020 (0.152)
+Train: 172 [ 150/1251 ( 12%)]  Loss: 3.987 (4.10)  Time: 0.615s, 1666.30/s  (0.709s, 1444.48/s)  LR: 3.864e-04  Data: 0.017 (0.108)
+Train: 172 [ 200/1251 ( 16%)]  Loss: 3.162 (3.91)  Time: 0.615s, 1665.45/s  (0.686s, 1493.64/s)  LR: 3.864e-04  Data: 0.019 (0.085)
+Train: 172 [ 250/1251 ( 20%)]  Loss: 3.961 (3.92)  Time: 0.615s, 1665.54/s  (0.672s, 1524.68/s)  LR: 3.864e-04  Data: 0.019 (0.072)
+Train: 172 [ 300/1251 ( 24%)]  Loss: 4.312 (3.98)  Time: 0.615s, 1665.00/s  (0.662s, 1546.19/s)  LR: 3.864e-04  Data: 0.019 (0.063)
+Train: 172 [ 350/1251 ( 28%)]  Loss: 4.341 (4.02)  Time: 0.617s, 1659.94/s  (0.656s, 1561.85/s)  LR: 3.864e-04  Data: 0.021 (0.057)
+Train: 172 [ 400/1251 ( 32%)]  Loss: 3.362 (3.95)  Time: 0.615s, 1665.33/s  (0.651s, 1573.86/s)  LR: 3.864e-04  Data: 0.018 (0.052)
+Train: 172 [ 450/1251 ( 36%)]  Loss: 3.436 (3.90)  Time: 0.615s, 1664.45/s  (0.647s, 1583.36/s)  LR: 3.864e-04  Data: 0.018 (0.049)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+
+Prune rate: 5.643884845265339
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 5.643884845265339
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+Prune rate: 5.643884845265339
+
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 5.643884845265339
+
+Train: 172 [ 500/1251 ( 40%)]  Loss: 3.947 (3.90)  Time: 0.614s, 1667.77/s  (0.644s, 1590.93/s)  LR: 3.864e-04  Data: 0.019 (0.046)
+Train: 172 [ 550/1251 ( 44%)]  Loss: 3.433 (3.86)  Time: 0.617s, 1660.30/s  (0.641s, 1597.27/s)  LR: 3.864e-04  Data: 0.019 (0.043)
+Train: 172 [ 600/1251 ( 48%)]  Loss: 4.547 (3.91)  Time: 0.616s, 1661.49/s  (0.639s, 1602.55/s)  LR: 3.864e-04  Data: 0.020 (0.041)
+Train: 172 [ 650/1251 ( 52%)]  Loss: 3.851 (3.91)  Time: 0.617s, 1660.82/s  (0.637s, 1607.06/s)  LR: 3.864e-04  Data: 0.021 (0.040)
+Train: 172 [ 700/1251 ( 56%)]  Loss: 4.315 (3.94)  Time: 0.614s, 1666.67/s  (0.636s, 1610.92/s)  LR: 3.864e-04  Data: 0.017 (0.038)
+Train: 172 [ 750/1251 ( 60%)]  Loss: 3.908 (3.94)  Time: 0.614s, 1667.14/s  (0.634s, 1614.30/s)  LR: 3.864e-04  Data: 0.019 (0.037)
+Train: 172 [ 800/1251 ( 64%)]  Loss: 3.462 (3.91)  Time: 0.614s, 1666.85/s  (0.633s, 1617.29/s)  LR: 3.864e-04  Data: 0.019 (0.036)
+Train: 172 [ 850/1251 ( 68%)]  Loss: 4.114 (3.92)  Time: 0.614s, 1666.65/s  (0.632s, 1619.92/s)  LR: 3.864e-04  Data: 0.019 (0.035)
+Train: 172 [ 900/1251 ( 72%)]  Loss: 3.954 (3.92)  Time: 0.616s, 1661.88/s  (0.631s, 1622.25/s)  LR: 3.864e-04  Data: 0.017 (0.034)
+Train: 172 [ 950/1251 ( 76%)]  Loss: 4.310 (3.94)  Time: 0.617s, 1658.64/s  (0.630s, 1624.35/s)  LR: 3.864e-04  Data: 0.018 (0.033)
+Train: 172 [1000/1251 ( 80%)]  Loss: 3.709 (3.93)  Time: 0.618s, 1656.92/s  (0.630s, 1626.25/s)  LR: 3.864e-04  Data: 0.021 (0.033)
+Train: 172 [1050/1251 ( 84%)]  Loss: 3.978 (3.93)  Time: 0.614s, 1667.33/s  (0.629s, 1627.97/s)  LR: 3.864e-04  Data: 0.020 (0.032)
+Train: 172 [1100/1251 ( 88%)]  Loss: 4.069 (3.94)  Time: 0.616s, 1661.76/s  (0.628s, 1629.55/s)  LR: 3.864e-04  Data: 0.021 (0.031)
+Train: 172 [1150/1251 ( 92%)]  Loss: 3.725 (3.93)  Time: 0.615s, 1663.97/s  (0.628s, 1631.06/s)  LR: 3.864e-04  Data: 0.019 (0.031)
+Train: 172 [1200/1251 ( 96%)]  Loss: 3.661 (3.92)  Time: 0.614s, 1666.69/s  (0.627s, 1632.54/s)  LR: 3.864e-04  Data: 0.020 (0.030)
+Train: 172 [1250/1251 (100%)]  Loss: 3.723 (3.91)  Time: 0.595s, 1721.82/s  (0.627s, 1633.95/s)  LR: 3.864e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.244 (9.244)  Loss:  0.8464 (0.8464)  Acc@1: 87.7930 (87.7930)  Acc@5: 96.9727 (96.9727)
+Test: [  48/48]  Time: 0.116 (0.340)  Loss:  1.0310 (1.4985)  Acc@1: 82.4293 (71.2880)  Acc@5: 94.9292 (90.7020)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-168.pth.tar', 71.38600007324219)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-170.pth.tar', 71.33200004394531)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-171.pth.tar', 71.32999991455078)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-172.pth.tar', 71.28800012451173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-167.pth.tar', 71.03200002197265)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-162.pth.tar', 70.95800004882813)
+
+Train: 173 [   0/1251 (  0%)]  Loss: 3.660 (3.66)  Time: 13.663s,   74.95/s  (13.663s,   74.95/s)  LR: 3.814e-04  Data: 12.219 (12.219)
+Train: 173 [  50/1251 (  4%)]  Loss: 3.324 (3.49)  Time: 0.613s, 1670.53/s  (0.898s, 1139.93/s)  LR: 3.814e-04  Data: 0.017 (0.269)
+Train: 173 [ 100/1251 (  8%)]  Loss: 3.887 (3.62)  Time: 0.614s, 1668.17/s  (0.759s, 1349.16/s)  LR: 3.814e-04  Data: 0.019 (0.145)
+Train: 173 [ 150/1251 ( 12%)]  Loss: 3.916 (3.70)  Time: 0.615s, 1664.19/s  (0.711s, 1439.78/s)  LR: 3.814e-04  Data: 0.018 (0.103)
+Train: 173 [ 200/1251 ( 16%)]  Loss: 3.574 (3.67)  Time: 0.618s, 1657.43/s  (0.687s, 1489.61/s)  LR: 3.814e-04  Data: 0.022 (0.082)
+Train: 173 [ 250/1251 ( 20%)]  Loss: 3.591 (3.66)  Time: 0.617s, 1659.03/s  (0.673s, 1521.24/s)  LR: 3.814e-04  Data: 0.019 (0.070)
+Train: 173 [ 300/1251 ( 24%)]  Loss: 4.041 (3.71)  Time: 0.613s, 1669.54/s  (0.664s, 1543.25/s)  LR: 3.814e-04  Data: 0.019 (0.061)
+Train: 173 [ 350/1251 ( 28%)]  Loss: 3.892 (3.74)  Time: 0.616s, 1663.12/s  (0.657s, 1559.21/s)  LR: 3.814e-04  Data: 0.021 (0.055)
+Train: 173 [ 400/1251 ( 32%)]  Loss: 3.603 (3.72)  Time: 0.616s, 1662.35/s  (0.652s, 1571.47/s)  LR: 3.814e-04  Data: 0.022 (0.051)
+Train: 173 [ 450/1251 ( 36%)]  Loss: 4.082 (3.76)  Time: 0.617s, 1660.52/s  (0.648s, 1581.23/s)  LR: 3.814e-04  Data: 0.022 (0.047)
+Train: 173 [ 500/1251 ( 40%)]  Loss: 3.903 (3.77)  Time: 0.614s, 1668.49/s  (0.644s, 1589.03/s)  LR: 3.814e-04  Data: 0.018 (0.044)
+Train: 173 [ 550/1251 ( 44%)]  Loss: 3.816 (3.77)  Time: 0.614s, 1668.74/s  (0.642s, 1595.43/s)  LR: 3.814e-04  Data: 0.018 (0.042)
+Train: 173 [ 600/1251 ( 48%)]  Loss: 4.048 (3.80)  Time: 0.614s, 1667.59/s  (0.640s, 1600.86/s)  LR: 3.814e-04  Data: 0.019 (0.040)
+Train: 173 [ 650/1251 ( 52%)]  Loss: 3.912 (3.80)  Time: 0.616s, 1661.14/s  (0.638s, 1605.49/s)  LR: 3.814e-04  Data: 0.020 (0.039)
+Train: 173 [ 700/1251 ( 56%)]  Loss: 4.308 (3.84)  Time: 0.614s, 1667.81/s  (0.636s, 1609.45/s)  LR: 3.814e-04  Data: 0.019 (0.037)
+Train: 173 [ 750/1251 ( 60%)]  Loss: 3.574 (3.82)  Time: 0.614s, 1667.27/s  (0.635s, 1612.95/s)  LR: 3.814e-04  Data: 0.019 (0.036)
+Train: 173 [ 800/1251 ( 64%)]  Loss: 4.263 (3.85)  Time: 0.614s, 1666.47/s  (0.634s, 1616.01/s)  LR: 3.814e-04  Data: 0.018 (0.035)
+Train: 173 [ 850/1251 ( 68%)]  Loss: 3.850 (3.85)  Time: 0.615s, 1666.03/s  (0.633s, 1618.71/s)  LR: 3.814e-04  Data: 0.018 (0.034)
+Train: 173 [ 900/1251 ( 72%)]  Loss: 4.240 (3.87)  Time: 0.615s, 1665.27/s  (0.632s, 1621.12/s)  LR: 3.814e-04  Data: 0.021 (0.033)
+Train: 173 [ 950/1251 ( 76%)]  Loss: 3.759 (3.86)  Time: 0.615s, 1664.59/s  (0.631s, 1623.27/s)  LR: 3.814e-04  Data: 0.021 (0.033)
+Train: 173 [1000/1251 ( 80%)]  Loss: 4.204 (3.88)  Time: 0.616s, 1662.16/s  (0.630s, 1625.21/s)  LR: 3.814e-04  Data: 0.019 (0.032)
+Train: 173 [1050/1251 ( 84%)]  Loss: 3.721 (3.87)  Time: 0.615s, 1665.63/s  (0.629s, 1626.99/s)  LR: 3.814e-04  Data: 0.018 (0.031)
+Train: 173 [1100/1251 ( 88%)]  Loss: 4.201 (3.89)  Time: 0.616s, 1663.12/s  (0.629s, 1628.57/s)  LR: 3.814e-04  Data: 0.021 (0.031)
+Train: 173 [1150/1251 ( 92%)]  Loss: 3.856 (3.88)  Time: 0.614s, 1668.72/s  (0.628s, 1630.11/s)  LR: 3.814e-04  Data: 0.018 (0.030)
+Train: 173 [1200/1251 ( 96%)]  Loss: 4.024 (3.89)  Time: 0.616s, 1661.63/s  (0.628s, 1631.64/s)  LR: 3.814e-04  Data: 0.019 (0.030)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+
+Prune rate: 6.547031670461982
+
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475Prune rate: 6.547031670461982
+
+
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 6.547031670461982
+
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 6.547031670461982
+
+Train: 173 [1250/1251 (100%)]  Loss: 3.760 (3.89)  Time: 0.595s, 1721.09/s  (0.627s, 1633.07/s)  LR: 3.814e-04  Data: 0.000 (0.029)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.180 (9.180)  Loss:  0.8017 (0.8017)  Acc@1: 86.8164 (86.8164)  Acc@5: 96.9727 (96.9727)
+Test: [  48/48]  Time: 0.116 (0.338)  Loss:  0.9371 (1.4438)  Acc@1: 81.9576 (70.9520)  Acc@5: 95.2830 (90.6080)
+Train: 174 [   0/1251 (  0%)]  Loss: 3.539 (3.54)  Time: 14.154s,   72.35/s  (14.154s,   72.35/s)  LR: 3.763e-04  Data: 13.562 (13.562)
+Train: 174 [  50/1251 (  4%)]  Loss: 3.755 (3.65)  Time: 0.613s, 1669.30/s  (0.913s, 1121.54/s)  LR: 3.763e-04  Data: 0.018 (0.294)
+Train: 174 [ 100/1251 (  8%)]  Loss: 4.354 (3.88)  Time: 0.615s, 1663.73/s  (0.766s, 1336.12/s)  LR: 3.763e-04  Data: 0.019 (0.158)
+Train: 174 [ 150/1251 ( 12%)]  Loss: 3.897 (3.89)  Time: 0.616s, 1661.74/s  (0.716s, 1429.82/s)  LR: 3.763e-04  Data: 0.017 (0.112)
+Train: 174 [ 200/1251 ( 16%)]  Loss: 4.048 (3.92)  Time: 0.614s, 1666.88/s  (0.691s, 1481.63/s)  LR: 3.763e-04  Data: 0.017 (0.089)
+Train: 174 [ 250/1251 ( 20%)]  Loss: 4.089 (3.95)  Time: 0.613s, 1670.74/s  (0.676s, 1514.70/s)  LR: 3.763e-04  Data: 0.019 (0.075)
+Train: 174 [ 300/1251 ( 24%)]  Loss: 3.768 (3.92)  Time: 0.615s, 1664.35/s  (0.666s, 1537.58/s)  LR: 3.763e-04  Data: 0.018 (0.066)
+Train: 174 [ 350/1251 ( 28%)]  Loss: 4.301 (3.97)  Time: 0.614s, 1668.10/s  (0.659s, 1554.42/s)  LR: 3.763e-04  Data: 0.019 (0.059)
+Train: 174 [ 400/1251 ( 32%)]  Loss: 3.995 (3.97)  Time: 0.617s, 1660.90/s  (0.653s, 1567.14/s)  LR: 3.763e-04  Data: 0.020 (0.054)
+Train: 174 [ 450/1251 ( 36%)]  Loss: 4.140 (3.99)  Time: 0.617s, 1660.28/s  (0.649s, 1577.26/s)  LR: 3.763e-04  Data: 0.022 (0.050)
+Train: 174 [ 500/1251 ( 40%)]  Loss: 3.957 (3.99)  Time: 0.619s, 1654.55/s  (0.646s, 1585.40/s)  LR: 3.763e-04  Data: 0.023 (0.047)
+Train: 174 [ 550/1251 ( 44%)]  Loss: 3.651 (3.96)  Time: 0.616s, 1662.87/s  (0.643s, 1592.17/s)  LR: 3.763e-04  Data: 0.020 (0.045)
+Train: 174 [ 600/1251 ( 48%)]  Loss: 3.913 (3.95)  Time: 0.615s, 1666.28/s  (0.641s, 1597.78/s)  LR: 3.763e-04  Data: 0.018 (0.043)
+Train: 174 [ 650/1251 ( 52%)]  Loss: 3.815 (3.94)  Time: 0.613s, 1670.12/s  (0.639s, 1602.60/s)  LR: 3.763e-04  Data: 0.018 (0.041)
+Train: 174 [ 700/1251 ( 56%)]  Loss: 3.845 (3.94)  Time: 0.617s, 1659.96/s  (0.637s, 1606.77/s)  LR: 3.763e-04  Data: 0.022 (0.039)
+Train: 174 [ 750/1251 ( 60%)]  Loss: 3.840 (3.93)  Time: 0.615s, 1664.61/s  (0.636s, 1610.40/s)  LR: 3.763e-04  Data: 0.020 (0.038)
+Train: 174 [ 800/1251 ( 64%)]  Loss: 4.060 (3.94)  Time: 0.617s, 1660.83/s  (0.635s, 1613.61/s)  LR: 3.763e-04  Data: 0.021 (0.037)
+Train: 174 [ 850/1251 ( 68%)]  Loss: 4.148 (3.95)  Time: 0.614s, 1668.43/s  (0.634s, 1616.41/s)  LR: 3.763e-04  Data: 0.018 (0.036)
+Train: 174 [ 900/1251 ( 72%)]  Loss: 4.171 (3.96)  Time: 0.615s, 1665.85/s  (0.633s, 1618.88/s)  LR: 3.763e-04  Data: 0.018 (0.035)
+Train: 174 [ 950/1251 ( 76%)]  Loss: 3.695 (3.95)  Time: 0.614s, 1668.79/s  (0.632s, 1621.14/s)  LR: 3.763e-04  Data: 0.019 (0.034)
+Train: 174 [1000/1251 ( 80%)]  Loss: 4.313 (3.97)  Time: 0.618s, 1657.04/s  (0.631s, 1623.18/s)  LR: 3.763e-04  Data: 0.019 (0.033)
+Train: 174 [1050/1251 ( 84%)]  Loss: 4.067 (3.97)  Time: 0.617s, 1660.39/s  (0.630s, 1625.00/s)  LR: 3.763e-04  Data: 0.022 (0.033)
+Train: 174 [1100/1251 ( 88%)]  Loss: 3.225 (3.94)  Time: 0.616s, 1662.79/s  (0.630s, 1626.69/s)  LR: 3.763e-04  Data: 0.020 (0.032)
+Train: 174 [1150/1251 ( 92%)]  Loss: 3.682 (3.93)  Time: 0.615s, 1665.93/s  (0.629s, 1628.34/s)  LR: 3.763e-04  Data: 0.017 (0.031)
+Train: 174 [1200/1251 ( 96%)]  Loss: 4.064 (3.93)  Time: 0.614s, 1666.69/s  (0.628s, 1629.91/s)  LR: 3.763e-04  Data: 0.019 (0.031)
+Train: 174 [1250/1251 (100%)]  Loss: 3.386 (3.91)  Time: 0.596s, 1718.71/s  (0.628s, 1631.40/s)  LR: 3.763e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.310 (9.310)  Loss:  0.8423 (0.8423)  Acc@1: 87.6953 (87.6953)  Acc@5: 96.8750 (96.8750)
+Test: [  48/48]  Time: 0.116 (0.341)  Loss:  0.9654 (1.4167)  Acc@1: 81.8396 (71.3340)  Acc@5: 95.4009 (90.8860)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-168.pth.tar', 71.38600007324219)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-174.pth.tar', 71.33399999755859)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-170.pth.tar', 71.33200004394531)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-171.pth.tar', 71.32999991455078)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-172.pth.tar', 71.28800012451173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-167.pth.tar', 71.03200002197265)
+
+Train: 175 [   0/1251 (  0%)]  Loss: 3.844 (3.84)  Time: 14.153s,   72.35/s  (14.153s,   72.35/s)  LR: 3.712e-04  Data: 13.227 (13.227)
+Train: 175 [  50/1251 (  4%)]  Loss: 3.926 (3.89)  Time: 0.614s, 1667.30/s  (0.884s, 1157.94/s)  LR: 3.712e-04  Data: 0.018 (0.281)
+Train: 175 [ 100/1251 (  8%)]  Loss: 3.897 (3.89)  Time: 0.615s, 1664.49/s  (0.752s, 1361.99/s)  LR: 3.712e-04  Data: 0.018 (0.152)
+Train: 175 [ 150/1251 ( 12%)]  Loss: 3.726 (3.85)  Time: 0.612s, 1672.54/s  (0.706s, 1449.67/s)  LR: 3.712e-04  Data: 0.018 (0.108)
+Train: 175 [ 200/1251 ( 16%)]  Loss: 4.175 (3.91)  Time: 0.616s, 1661.48/s  (0.684s, 1497.72/s)  LR: 3.712e-04  Data: 0.018 (0.085)
+Train: 175 [ 250/1251 ( 20%)]  Loss: 3.835 (3.90)  Time: 0.617s, 1660.68/s  (0.670s, 1528.15/s)  LR: 3.712e-04  Data: 0.017 (0.072)
+Train: 175 [ 300/1251 ( 24%)]  Loss: 3.981 (3.91)  Time: 0.614s, 1667.93/s  (0.661s, 1549.27/s)  LR: 3.712e-04  Data: 0.017 (0.063)
+Train: 175 [ 350/1251 ( 28%)]  Loss: 3.718 (3.89)  Time: 0.616s, 1663.37/s  (0.655s, 1564.51/s)  LR: 3.712e-04  Data: 0.018 (0.057)
+Train: 175 [ 400/1251 ( 32%)]  Loss: 4.080 (3.91)  Time: 0.616s, 1661.84/s  (0.650s, 1576.19/s)  LR: 3.712e-04  Data: 0.022 (0.052)
+Train: 175 [ 450/1251 ( 36%)]  Loss: 3.992 (3.92)  Time: 0.617s, 1659.43/s  (0.646s, 1585.38/s)  LR: 3.712e-04  Data: 0.020 (0.049)
+Train: 175 [ 500/1251 ( 40%)]  Loss: 3.912 (3.92)  Time: 0.614s, 1668.53/s  (0.643s, 1592.84/s)  LR: 3.712e-04  Data: 0.018 (0.046)
+Train: 175 [ 550/1251 ( 44%)]  Loss: 3.761 (3.90)  Time: 0.615s, 1663.93/s  (0.640s, 1599.02/s)  LR: 3.712e-04  Data: 0.021 (0.043)
+Train: 175 [ 600/1251 ( 48%)]  Loss: 4.139 (3.92)  Time: 0.617s, 1658.63/s  (0.638s, 1604.15/s)  LR: 3.712e-04  Data: 0.020 (0.041)
+Train: 175 [ 650/1251 ( 52%)]  Loss: 4.018 (3.93)  Time: 0.616s, 1661.49/s  (0.637s, 1608.51/s)  LR: 3.712e-04  Data: 0.020 (0.040)
+Train: 175 [ 700/1251 ( 56%)]  Loss: 3.603 (3.91)  Time: 0.616s, 1662.25/s  (0.635s, 1612.31/s)  LR: 3.712e-04  Data: 0.020 (0.038)
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+*********************************Dynamic Sparsity********************************
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609
+module.block1.0.attn.spatial_gating_unit.conv_spatial.weight: 9692.0->9692, density: 0.839module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block1.1.attn.spatial_gating_unit.conv_spatial.weight: 9746.0->9746, density: 0.844
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+
+module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block1.2.attn.spatial_gating_unit.conv_spatial.weight: 9784.0->9784, density: 0.847
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block2.0.attn.spatial_gating_unit.conv_spatial.weight: 14067.0->14067, density: 0.609module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472
+Prune rate: 7.513407548831083
+
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block2.1.attn.spatial_gating_unit.conv_spatial.weight: 14238.0->14238, density: 0.616
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439module.block2.2.attn.spatial_gating_unit.conv_spatial.weight: 14158.0->14158, density: 0.613
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+Prune rate: 7.513407548831083
+
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472module.block3.0.attn.spatial_gating_unit.conv_spatial.weight: 27428.0->27428, density: 0.475
+
+module.block3.1.attn.spatial_gating_unit.conv_spatial.weight: 27234.0->27234, density: 0.472module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+
+module.block3.2.attn.spatial_gating_unit.conv_spatial.weight: 27517.0->27517, density: 0.476module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+
+Prune rate: 7.513407548831083
+
+module.block3.3.attn.spatial_gating_unit.conv_spatial.weight: 27258.0->27258, density: 0.472
+module.block3.4.attn.spatial_gating_unit.conv_spatial.weight: 27281.0->27281, density: 0.472
+module.block4.0.attn.spatial_gating_unit.conv_spatial.weight: 40365.0->40365, density: 0.437
+module.block4.1.attn.spatial_gating_unit.conv_spatial.weight: 40585.0->40585, density: 0.439
+Prune rate: 7.513407548831083
+
+Train: 175 [ 750/1251 ( 60%)]  Loss: 3.471 (3.88)  Time: 0.614s, 1668.01/s  (0.634s, 1615.57/s)  LR: 3.712e-04  Data: 0.019 (0.037)
+Train: 175 [ 800/1251 ( 64%)]  Loss: 3.334 (3.85)  Time: 0.615s, 1664.03/s  (0.633s, 1618.49/s)  LR: 3.712e-04  Data: 0.020 (0.036)
+Train: 175 [ 850/1251 ( 68%)]  Loss: 4.026 (3.86)  Time: 0.616s, 1662.00/s  (0.632s, 1621.06/s)  LR: 3.712e-04  Data: 0.021 (0.035)
+Train: 175 [ 900/1251 ( 72%)]  Loss: 3.791 (3.85)  Time: 0.616s, 1662.05/s  (0.631s, 1623.34/s)  LR: 3.712e-04  Data: 0.021 (0.034)
+Train: 175 [ 950/1251 ( 76%)]  Loss: 3.853 (3.85)  Time: 0.618s, 1655.79/s  (0.630s, 1625.37/s)  LR: 3.712e-04  Data: 0.020 (0.033)
+Train: 175 [1000/1251 ( 80%)]  Loss: 4.000 (3.86)  Time: 0.615s, 1664.67/s  (0.629s, 1627.20/s)  LR: 3.712e-04  Data: 0.018 (0.033)
+Train: 175 [1050/1251 ( 84%)]  Loss: 3.986 (3.87)  Time: 0.614s, 1668.86/s  (0.629s, 1628.91/s)  LR: 3.712e-04  Data: 0.018 (0.032)
+Train: 175 [1100/1251 ( 88%)]  Loss: 3.313 (3.84)  Time: 0.616s, 1661.09/s  (0.628s, 1630.42/s)  LR: 3.712e-04  Data: 0.022 (0.031)
+Train: 175 [1150/1251 ( 92%)]  Loss: 4.121 (3.85)  Time: 0.613s, 1670.84/s  (0.627s, 1631.89/s)  LR: 3.712e-04  Data: 0.018 (0.031)
+Train: 175 [1200/1251 ( 96%)]  Loss: 3.496 (3.84)  Time: 0.612s, 1672.39/s  (0.627s, 1633.35/s)  LR: 3.712e-04  Data: 0.018 (0.030)
+Train: 175 [1250/1251 (100%)]  Loss: 4.094 (3.85)  Time: 0.594s, 1722.85/s  (0.626s, 1634.76/s)  LR: 3.712e-04  Data: 0.000 (0.030)
+Distributing BatchNorm running means and vars
+Test: [   0/48]  Time: 9.371 (9.371)  Loss:  0.7915 (0.7915)  Acc@1: 87.1094 (87.1094)  Acc@5: 97.3633 (97.3633)
+Test: [  48/48]  Time: 0.116 (0.343)  Loss:  0.9428 (1.4184)  Acc@1: 83.1368 (71.1740)  Acc@5: 95.4009 (90.9440)
+Current checkpoints:
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-168.pth.tar', 71.38600007324219)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-174.pth.tar', 71.33399999755859)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-170.pth.tar', 71.33200004394531)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-171.pth.tar', 71.32999991455078)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-172.pth.tar', 71.28800012451173)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-161.pth.tar', 71.20599990966797)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-175.pth.tar', 71.17400004394531)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-164.pth.tar', 71.13199994140625)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-159.pth.tar', 71.11399999511718)
+ ('./output/train/20220320-103139-van_tiny-224/checkpoint-160.pth.tar', 71.05199996826173)
+
+Train: 176 [   0/1251 (  0%)]  Loss: 4.025 (4.02)  Time: 14.758s,   69.39/s  (14.758s,   69.39/s)  LR: 3.662e-04  Data: 14.166 (14.166)
+Train: 176 [  50/1251 (  4%)]  Loss: 4.082 (4.05)  Time: 0.613s, 1669.64/s  (0.901s, 1136.62/s)  LR: 3.662e-04  Data: 0.017 (0.296)
+slurmstepd: error: *** JOB 622190 ON gcn29 CANCELLED AT 2022-03-20T14:33:19 ***
+
+JOB STATISTICS
+==============
+Job ID: 622190
+Cluster: snellius
+User/Group: shiweil/shiweil
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 72
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.00% of 12-02:44:24 core-walltime
+Job Wall-clock time: 04:02:17
+Memory Utilized: 114.56 GB
+Memory Efficiency: 23.28% of 492.19 GB
