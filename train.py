@@ -302,6 +302,10 @@ parser.add_argument('--torchscript', dest='torchscript', action='store_true',
                     help='convert model torchscript for inference')
 parser.add_argument('--log-wandb', action='store_true', default=False,
                     help='log training and validation metrics to wandb')
+
+# large kernel
+parser.add_argument('--kernel-size', default=3, type=int, metavar='N',
+                    help='kernel size of attention (default: 3)')
 sparse_core.add_sparse_args(parser)
 
 def _parse_args():

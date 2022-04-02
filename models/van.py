@@ -51,10 +51,10 @@ class AttentionModule(nn.Module):
         self.conv0 = nn.Conv2d(dim, dim, 5, padding=2, groups=dim)
         # (c-1)/2  = padding
         # original dilation conv
-        # self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
+        self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
         # large conv with same receptive field
         # self.conv_spatial = nn.Conv2d(dim, dim, 19, stride=1, padding=9, groups=dim)
-        self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=9, groups=dim)
+        # self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=9, groups=dim)
         self.conv1 = nn.Conv2d(dim, dim, 1)
 
 
@@ -69,9 +69,10 @@ class AttentionModule(nn.Module):
         return u * attn
 
 class AttentionModule_LK(nn.Module):
-    def __init__(self, dim):
+    def __init__(self, dim, kelnel_size):
         super().__init__()
-        self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=10, groups=dim)
+        padding = kelnel_size // 2
+        self.conv_spatial = nn.Conv2d(dim, dim, kelnel_size, stride=1, padding=padding, groups=dim)
         self.conv1 = nn.Conv2d(dim, dim, 1)
 
     def forward(self, x):
@@ -86,13 +87,13 @@ class AttentionModule_LK(nn.Module):
 
 
 class SpatialAttention(nn.Module):
-    def __init__(self, d_model):
+    def __init__(self, d_model, kernel_size):
         super().__init__()
 
         self.proj_1 = nn.Conv2d(d_model, d_model, 1)
         self.activation = nn.GELU()
         # self.spatial_gating_unit = AttentionModule(d_model)
-        self.spatial_gating_unit = AttentionModule_LK(d_model)
+        self.spatial_gating_unit = AttentionModule_LK(d_model, kernel_size)
         self.proj_2 = nn.Conv2d(d_model, d_model, 1)
 
     def forward(self, x):
@@ -106,10 +107,10 @@ class SpatialAttention(nn.Module):
 
 
 class Block(nn.Module):
-    def __init__(self, dim, mlp_ratio=4., drop=0.,drop_path=0., act_layer=nn.GELU):
+    def __init__(self, dim, mlp_ratio=4., drop=0.,drop_path=0., act_layer=nn.GELU, kernel_size=3):
         super().__init__()
         self.norm1 = nn.BatchNorm2d(dim)
-        self.attn = SpatialAttention(dim)
+        self.attn = SpatialAttention(dim, kernel_size)
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
 
         self.norm2 = nn.BatchNorm2d(dim)
@@ -188,7 +189,7 @@ class OverlapPatchEmbed(nn.Module):
 class VAN(nn.Module):
     def __init__(self, img_size=224, in_chans=3, num_classes=1000, embed_dims=[64, 128, 256, 512],
                 mlp_ratios=[4, 4, 4, 4], drop_rate=0., drop_path_rate=0., norm_layer=nn.LayerNorm,
-                 depths=[3, 4, 6, 3], num_stages=4, flag=False):
+                 depths=[3, 4, 6, 3], num_stages=4, flag=False, kernel_size=3):
         super().__init__()
         if flag == False:
             self.num_classes = num_classes
@@ -206,7 +207,7 @@ class VAN(nn.Module):
                                             embed_dim=embed_dims[i])
 
             block = nn.ModuleList([Block(
-                dim=embed_dims[i], mlp_ratio=mlp_ratios[i], drop=drop_rate, drop_path=dpr[cur + j])
+                dim=embed_dims[i], mlp_ratio=mlp_ratios[i], drop=drop_rate, drop_path=dpr[cur + j], kernel_size=kernel_size)
                 for j in range(depths[i])])
             norm = norm_layer(embed_dims[i])
             cur += depths[i]
