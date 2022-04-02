@@ -17,7 +17,7 @@ module load 2021
 module load CUDA/11.3.1
 #module load PyTorch/1.10.0-foss-2021a-CUDA-11.3.1
 
-for KS in 11 15
+for KS in 11 15 21
 
 do
   MODEL=van_tiny # van_{tiny, small, base, large}
