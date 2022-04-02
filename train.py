@@ -381,7 +381,7 @@ def main():
         drop_path_rate=args.drop_path,
         drop_block_rate=None,
     )
-    
+    print(args)
     print(model)
 
     if args.num_classes is None:
