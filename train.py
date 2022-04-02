@@ -381,6 +381,8 @@ def main():
         drop_path_rate=args.drop_path,
         drop_block_rate=None,
     )
+    
+    print(model)
 
     if args.num_classes is None:
         assert hasattr(model, 'num_classes'), 'Model must have `num_classes` attr if not set on cmd line/config.'
