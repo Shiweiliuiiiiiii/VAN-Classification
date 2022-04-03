@@ -195,6 +195,7 @@ class VAN(nn.Module):
             self.num_classes = num_classes
         self.depths = depths
         self.num_stages = num_stages
+        self.kernel_size = kernel_size
 
         dpr = [x.item() for x in torch.linspace(0, drop_path_rate, sum(depths))]  # stochastic depth decay rule
         cur = 0
@@ -207,7 +208,7 @@ class VAN(nn.Module):
                                             embed_dim=embed_dims[i])
 
             block = nn.ModuleList([Block(
-                dim=embed_dims[i], mlp_ratio=mlp_ratios[i], drop=drop_rate, drop_path=dpr[cur + j], kernel_size=kernel_size)
+                dim=embed_dims[i], mlp_ratio=mlp_ratios[i], drop=drop_rate, drop_path=dpr[cur + j], kernel_size=self.kernel_size)
                 for j in range(depths[i])])
             norm = norm_layer(embed_dims[i])
             cur += depths[i]

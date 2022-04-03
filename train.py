@@ -380,6 +380,7 @@ def main():
         drop_rate=args.drop,
         drop_path_rate=args.drop_path,
         drop_block_rate=None,
+        kernel_size=args.kernel_size
     )
     print(args)
     print(model)
