@@ -324,8 +324,6 @@ parser.add_argument('--width_factor', type=float, default=1, help='set the width
 parser.add_argument('--LoRA', type=str2bool, default=False, help='Enabling low rank path')
 sparse_core.add_sparse_args(parser)
 
-sparse_core.add_sparse_args(parser)
-
 def _parse_args():
     # Do we have a config file to parse?
     args_config, remaining = config_parser.parse_known_args()
