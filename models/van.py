@@ -7,6 +7,9 @@ from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 from timm.models.registry import register_model
 from timm.models.vision_transformer import _cfg
 import math
+import sys, os
+sys.path.append('/home/shiweil/Projects/cutlass/examples/19_large_depthwise_conv2d_torch_extension')
+from depthwise_conv2d_implicit_gemm import DepthWiseConv2dImplicitGEMM
 
 class Mlp(nn.Module):
     def __init__(self, in_features, hidden_features=None, out_features=None, act_layer=nn.GELU, drop=0.):
@@ -51,10 +54,10 @@ class AttentionModule(nn.Module):
         self.conv0 = nn.Conv2d(dim, dim, 5, padding=2, groups=dim)
         # (c-1)/2  = padding
         # original dilation conv
-        self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
+        # self.conv_spatial = nn.Conv2d(dim, dim, 7, stride=1, padding=9, groups=dim, dilation=3)
         # large conv with same receptive field
         # self.conv_spatial = nn.Conv2d(dim, dim, 19, stride=1, padding=9, groups=dim)
-        # self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=9, groups=dim)
+        self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=9, groups=dim)
         self.conv1 = nn.Conv2d(dim, dim, 1)
 
 
@@ -69,31 +72,39 @@ class AttentionModule(nn.Module):
         return u * attn
 
 class AttentionModule_LK(nn.Module):
-    def __init__(self, dim, kelnel_size):
+    def __init__(self, dim, kernel_size=(21, 21)):
         super().__init__()
-        padding = kelnel_size // 2
-        self.conv_spatial = nn.Conv2d(dim, dim, kelnel_size, stride=1, padding=padding, groups=dim)
-        self.conv1 = nn.Conv2d(dim, dim, 1)
+
+        # self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=10, groups=dim)
+
+        self.dwconv1 = DepthWiseConv2dImplicitGEMM(dim, (kernel_size[0], kernel_size[1]),
+                                                   bias=True)  # depthwise conv
+        self.dwconv2 = DepthWiseConv2dImplicitGEMM(dim, (kernel_size[1], kernel_size[0]),
+                                                   bias=True)  # depthwise conv
+        self.pwconv_LoRA = nn.Conv2d(dim, dim, 1)  # depthwise conv
 
     def forward(self, x):
         u = x.clone()
         # attn = self.conv0(x)
         # print(f'size after first conv is {attn.size()}')
-        attn = self.conv_spatial(x)
+        attn = self.dwconv1(x) + self.dwconv2(x)
         # print(f'size after two conv is {attn.size()}')
-        attn = self.conv1(attn)
+        attn = self.pwconv_LoRA(attn)
 
         return u * attn
 
 
 class SpatialAttention(nn.Module):
-    def __init__(self, d_model, kernel_size):
+    def __init__(self, d_model, kernel_size=(21, 21), LoRA=None):
         super().__init__()
 
         self.proj_1 = nn.Conv2d(d_model, d_model, 1)
         self.activation = nn.GELU()
         # self.spatial_gating_unit = AttentionModule(d_model)
-        self.spatial_gating_unit = AttentionModule_LK(d_model, kernel_size)
+        if LoRA:
+            self.spatial_gating_unit = AttentionModule_LK(d_model, kernel_size)
+        else:
+            self.spatial_gating_unit = AttentionModule(d_model)
         self.proj_2 = nn.Conv2d(d_model, d_model, 1)
 
     def forward(self, x):
@@ -107,10 +118,10 @@ class SpatialAttention(nn.Module):
 
 
 class Block(nn.Module):
-    def __init__(self, dim, mlp_ratio=4., drop=0.,drop_path=0., act_layer=nn.GELU, kernel_size=3):
+    def __init__(self, dim, mlp_ratio=4., drop=0.,drop_path=0., act_layer=nn.GELU, kernel_size=[21,5], LoRA=None):
         super().__init__()
         self.norm1 = nn.BatchNorm2d(dim)
-        self.attn = SpatialAttention(dim, kernel_size)
+        self.attn = SpatialAttention(dim, kernel_size=kernel_size, LoRA=LoRA)
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
 
         self.norm2 = nn.BatchNorm2d(dim)
@@ -189,13 +200,12 @@ class OverlapPatchEmbed(nn.Module):
 class VAN(nn.Module):
     def __init__(self, img_size=224, in_chans=3, num_classes=1000, embed_dims=[64, 128, 256, 512],
                 mlp_ratios=[4, 4, 4, 4], drop_rate=0., drop_path_rate=0., norm_layer=nn.LayerNorm,
-                 depths=[3, 4, 6, 3], num_stages=4, flag=False, kernel_size=3):
+                 depths=[3, 4, 6, 3], num_stages=4, flag=False, kernel_size=[21, 5], LoRA=None ):
         super().__init__()
         if flag == False:
             self.num_classes = num_classes
         self.depths = depths
         self.num_stages = num_stages
-        self.kernel_size = kernel_size
 
         dpr = [x.item() for x in torch.linspace(0, drop_path_rate, sum(depths))]  # stochastic depth decay rule
         cur = 0
@@ -208,7 +218,7 @@ class VAN(nn.Module):
                                             embed_dim=embed_dims[i])
 
             block = nn.ModuleList([Block(
-                dim=embed_dims[i], mlp_ratio=mlp_ratios[i], drop=drop_rate, drop_path=dpr[cur + j], kernel_size=self.kernel_size)
+                dim=embed_dims[i], mlp_ratio=mlp_ratios[i], drop=drop_rate, drop_path=dpr[cur + j], kernel_size=kernel_size, LoRA=LoRA )
                 for j in range(depths[i])])
             norm = norm_layer(embed_dims[i])
             cur += depths[i]
