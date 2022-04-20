@@ -72,7 +72,7 @@ class AttentionModule(nn.Module):
         return u * attn
 
 class AttentionModule_LK(nn.Module):
-    def __init__(self, dim, kernel_size=(21, 21)):
+    def __init__(self, dim, kernel_size=[21, 21]):
         super().__init__()
 
         # self.conv_spatial = nn.Conv2d(dim, dim, 21, stride=1, padding=10, groups=dim)
@@ -95,7 +95,7 @@ class AttentionModule_LK(nn.Module):
 
 
 class SpatialAttention(nn.Module):
-    def __init__(self, d_model, kernel_size=(21, 21), LoRA=None):
+    def __init__(self, d_model, kernel_size=[21, 21], LoRA=None):
         super().__init__()
 
         self.proj_1 = nn.Conv2d(d_model, d_model, 1)
