@@ -40,6 +40,20 @@ import sparse_core
 from sparse_core import Masking, CosineDecay
 import models
 
+def str2bool(v):
+    """
+    Converts string to bool type; enables command line
+    arguments in the format of '--arg1 true --arg2 false'
+    """
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
 try:
     from apex import amp
     from apex.parallel import DistributedDataParallel as ApexDDP
@@ -304,8 +318,12 @@ parser.add_argument('--log-wandb', action='store_true', default=False,
                     help='log training and validation metrics to wandb')
 
 # large kernel
-parser.add_argument('--kernel-size', default=3, type=int, metavar='N',
-                    help='kernel size of attention (default: 3)')
+parser.add_argument('--kernel-size', nargs="*", type=int,
+                    default=[31, 5], help='kernel size of attention (default: [31,29,27,13,3])')
+parser.add_argument('--width_factor', type=float, default=1, help='set the width factor of the model')
+parser.add_argument('--LoRA', type=str2bool, default=False, help='Enabling low rank path')
+sparse_core.add_sparse_args(parser)
+
 sparse_core.add_sparse_args(parser)
 
 def _parse_args():
@@ -380,10 +398,9 @@ def main():
         drop_rate=args.drop,
         drop_path_rate=args.drop_path,
         drop_block_rate=None,
-        kernel_size=args.kernel_size
+        kernel_size=args.kernel_size,
+        LoRA=args.LoRA
     )
-    print(args)
-    print(model)
 
     if args.num_classes is None:
         assert hasattr(model, 'num_classes'), 'Model must have `num_classes` attr if not set on cmd line/config.'
