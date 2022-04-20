@@ -24,7 +24,7 @@ do
   DROP_PATH=0.1 # drop path rates [0.1, 0.1, 0.1, 0.2] for [tiny, small, base, large]
   CUDA_VISIBLE_DEVICES=0,1,2,3 bash distributed_train1.sh 4 /scratch-shared/shiwei/  \
       --model $MODEL -b 256 --lr 1e-3 --drop-path $DROP_PATH -j 40 -u 2000  \
-       --epochs 300 --kernel-size $KS 5 --LoRA
+       --epochs 300 --kernel-size $KS 5 --LoRA True
 done
 
 source deactivate
